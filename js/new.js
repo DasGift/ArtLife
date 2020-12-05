@@ -31,12 +31,17 @@ $(document).ready(function(){
         $('.modal_partner').css({'display': 'block'});
     });
 
+    $('.send_points').click(function(){
+        $('.modal_send').css({'display': 'block'});
+    });
+
     $('.modal_line .closebig').click(function(){
         $('.modal_line').css({'display': 'none'});
     });
 
-    $('.modal_partner .closebig').click(function(){
+    $('.closebig').click(function(){
         $('.modal_partner').css({'display': 'none'});
+        $('.modal_send').css({'display': 'none'});
     });
 
     $('a.more').click(function(){
@@ -50,11 +55,19 @@ $(document).ready(function(){
             $(this).addClass('active');
         }
     });
-    /* $('.fixtable').each(function() {
 
-new FixTable(this);
+    $('a.open').click(function(){
+        $('.hidden_component').addClass('active');
+    });
 
-}); */
+    $('a.hidden').click(function(){
+        $('.hidden_component').removeClass('active');
+    });
+
+    $('.mailslog').click(function(){
+        $(this).addClass('active');
+        $('.comment_block').css({'display': 'block'});
+    });
 });
 
 function FixTable(table) {

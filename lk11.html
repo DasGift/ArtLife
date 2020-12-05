@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="ru">
 <head>
@@ -362,12 +361,13 @@
             </div>
           </div>
           <div class="modal_partner">
+            <a href="#" class="closebig"></a>
             <h2>Добавить нового партнера</h2>
             <div class="component_body">
               <div class="line_param_input">
                 <div class="sortblock">
                   <div class="sortblock_param">
-                    <h5>Уровень доступа</h5>
+                    <h5 style="margin: 25px 0">Уровень доступа</h5>
                     <div class="radio">
                       <input class="custom-radio" type="radio" id="param1" name="param" value="Полное дерево">
                       <label for="param1">Клиент</label>
@@ -378,13 +378,13 @@
                     </div>
                   </div>
                   <div class="sortblock_param">
-                    <h5>Владелец склада</h5>
+                    <h5 style="margin-bottom: 15px">Владелец склада</h5>
                     <div class="radio">
-                      <input class="custom-radio" type="radio" id="param3" name="param" value="Полное дерево">
+                      <input class="custom-radio" type="radio" id="param3" name="owner" value="Полное дерево">
                       <label for="param3">Выбрать из списка партнеров</label>
                     </div>
                     <div class="radio">
-                      <input class="custom-radio" type="radio" id="param4" name="param" value="Директорское">
+                      <input class="custom-radio" type="radio" id="param4" name="owner" value="Директорское">
                       <label for="param4">Ввести номер</label>
                     </div>
                   </div>
@@ -395,6 +395,7 @@
                   <div class="label_in">
                     <input type="text" class="tinput" />
                     <label class="tlabel">Партнер</label>
+                    <a href="#" class="line_param_down"></a>
                   </div>
                   <div class="label_in">
                     <input type="text" class="tinput" />
@@ -437,7 +438,9 @@
       </div>
       <div class="footer">
         <div class="footer_line">
-          <div class="title_line">Фильтры поиска</div>
+          <div class="title_line">
+            <div class="title_line_t search">Фильтры поиска</div>
+          </div>
           <div class="modal_line">
             <a href="#" class="closebig"></a>
             <h3>Фильтры поиска</h3>
