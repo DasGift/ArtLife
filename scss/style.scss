@@ -1,5 +1,21 @@
 @import "reset";
 
+@font-face {
+  font-family: 'FuturaPT-Book';
+  src: url('../fonts/FuturaPT-Book.ttf');
+  src: local('вє'), url('../fonts/FuturaPT-Book.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'FuturaPT-Demi';
+  src: url('../fonts/FuturaPT-Demi.ttf');
+  src: local('вє'), url('../fonts/FuturaPT-Demi.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
 body {
   font-family: 'FTN45', sans-serif;
   font-style: normal;
@@ -14,17 +30,28 @@ h1 {
   line-height: 32px;
   color: #383A41;
   margin-bottom: 30px;
-  font-family: FTN65;
+  font-family: FuturaPT-Demi;
 }
 
 h3 {
+  font-family: FuturaPT-Book;
   font-style: normal;
-  font-weight: normal;
+  font-weight: 500;
   font-size: 20px;
   line-height: 20px;
   color: #383A41;
-  font-family: FTN45;
+  margin-bottom: 24px;
+}
+
+h5 {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 12px;
+  color: #383A41;
+  font-family: FuturaPT-Demi;
   margin-bottom: 25px;
+  text-transform: uppercase
 }
 
 input[type="text"] {
@@ -347,16 +374,22 @@ input[type="text"] {
   margin-bottom: 24px;
 
   &_top {
+    font-family: FuturaPT-Book;
+    font-style: normal;
+    font-weight: normal;
     font-size: 12px;
     line-height: 12px;
     color: #9A9A9A;
-    margin-bottom: 10px;
   }
 
   &_bottom {
-    line-height: 12px;
+    font-family: FuturaPT-Book;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 16px;
     color: #383A41;
-    padding-bottom: 12px;
+    padding: 4px 0 12px;
   }
 
   &_border {
@@ -438,14 +471,15 @@ input[type="text"] {
 
     &_t {
       display: inline;
+      text-align: center;
+      padding-right: 40px;
+      cursor: pointer;
+      font-family: FuturaPT-Book;
+      font-style: normal;
       font-weight: 500;
       font-size: 16px;
       line-height: 16px;
-      text-align: center;
       color: #383A41;
-      padding-right: 40px;
-      font-family: FTN65;
-      cursor: pointer;
     }
 
     &_t.search {
@@ -454,6 +488,10 @@ input[type="text"] {
 
     &_t.filter {
       background: url(../images/filt.svg) no-repeat 100% center;
+    }
+
+    &_t.burger {
+      background: url(../images/burger.svg) no-repeat 100% center;
     }
   }
 }
@@ -488,6 +526,16 @@ input[type="text"] {
   a {
     display: none;
     line-height: 16px;
+    color: #32AAA7;
+  }
+
+  a.back {
+    font-family: FuturaPT-Book;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 12px;
+    text-transform: uppercase;
     color: #32AAA7;
   }
 }
@@ -568,10 +616,12 @@ input[type="text"] {
     border-bottom: 1px solid #BABABA;
     background: #DEE2F3;
     padding: 8px;
+    font-family: FuturaPT-Demi;
+    font-style: normal;
+    font-weight: 500;
     font-size: 14px;
-    line-height: 12px;
-    color: #000000;
-    font-family: FTN65;
+    line-height: 16px;
+    color: #383A41;
     text-align: left;
 
     &:nth-child(1) {
@@ -582,10 +632,12 @@ input[type="text"] {
 
   table tr td {
     padding: 8px;
+    font-family: FuturaPT-Demi;
+    font-style: normal;
+    font-weight: 500;
     font-size: 14px;
-    line-height: 12px;
-    color: #000000;
-    font-family: FTN65;
+    line-height: 16px;
+    color: #383A41;
 
     &:nth-child(1) {
       border-right: 1px solid #BABABA;
@@ -697,6 +749,15 @@ table.bordered tr td {
 .radio {
   float: left;
   margin-right: 20px;
+
+  label {
+    font-family: FuturaPT-Demi;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    color: #383A41;
+  }
 }
 
 .custom-radio {
@@ -707,13 +768,12 @@ table.bordered tr td {
 
 .custom-radio + label {
   display: inline-flex;
-  align-items: center;
-  user-select: none;
-  font-size: 12px;
-  line-height: 12px;
+  font-family: FuturaPT-Demi;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
   color: #383A41;
-  font-family: FTN65;
-  cursor: pointer;
 }
 
 .custom-radio + label::before {
@@ -763,12 +823,11 @@ table.bordered tr td {
 .tlabel{
   position: absolute;
   top: 42px;
-  /* left: 37px; */
   transition: .15s ease-in-out;
   color: #a0a0a6;
   pointer-events: none;
-  left:0;
-  text-transform:uppercase
+  left: 0;
+  font-family: FuturaPT-Book;
 }
 
 .tinput {
@@ -789,11 +848,6 @@ table.bordered tr td {
  }
 
   &:focus ~ label{
-    font-size: 9px;
-    top: 25px;
-  }
-
-  &:valid ~ label{
     font-size: 9px;
     top: 25px;
   }
