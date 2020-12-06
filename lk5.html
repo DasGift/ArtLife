@@ -93,7 +93,6 @@
       </div>
       <div class="content">
         <div class="c_head">
-          <a href="#" class="back">Назад</a>
           <h1>Все товарные документы</h1>
         </div>
         <div class="component">
@@ -118,9 +117,6 @@
               </ul>
             </div>
           </div>
-          <div class="component_head">
-            <span class="pr_names">Петров Дмитрий 9238129</span><span class="lt3"><img src="images/br1.svg" alt=""></span>
-          </div>
           <div class="component_body">
             <div class="f_part">
               <div class="nav_top">
@@ -130,17 +126,73 @@
                 </ul>
               </div>
               <div class="middle_part">
-                <table class="otch_p fixtable">
+                <table class="otch_p bordered">
                   <thead>
-                  <tr class="head_t">
-                    <th>Номер документа</th>
-                    <th>Дата создания</th>
-                    <th>№ покупателя</th>
-                    <th>№ склада покупателя</th>
-                    <th>ФИО покупателя</th>
-                    <th>Название склада краткое</th>
-                    <th>№ партнера</th>
-                  </tr>
+                    <tr class="head_t">
+                    <th style="width: 5%; padding-right: 35px;">
+                      <div>
+                        <span>Номер документа</span>
+                      </div>
+                      <div class="table_array">
+                        <img src="./images/array-drop-top.svg" alt="Сортировка" class="table_array_top">
+                        <img src="./images/array-drop-down.svg" alt="Сортировка" class="table_array_bottom">
+                      </div>
+                    </th>
+                      <th>
+                        <div>
+                          <span>Дата создания</span>
+                        </div>
+                        <div class="table_array">
+                          <img src="./images/array-drop-top.svg" alt="Сортировка" class="table_array_top">
+                          <img src="./images/array-drop-down.svg" alt="Сортировка" class="table_array_bottom">
+                        </div>
+                      </th>
+                      <th>
+                        <div>
+                          <span>№ покупателя</span>
+                        </div>
+                        <div class="table_array">
+                          <img src="./images/array-drop-top.svg" alt="Сортировка" class="table_array_top">
+                          <img src="./images/array-drop-down.svg" alt="Сортировка" class="table_array_bottom">
+                        </div>
+                      </th>
+                      <th>
+                        <div>
+                          <span>№ склада покупателя</span>
+                        </div>
+                        <div class="table_array">
+                          <img src="./images/array-drop-top.svg" alt="Сортировка" class="table_array_top">
+                          <img src="./images/array-drop-down.svg" alt="Сортировка" class="table_array_bottom">
+                        </div>
+                      </th>
+                      <th>
+                        <div>
+                          <span>ФИО покупателя</span>
+                        </div>
+                        <div class="table_array">
+                          <img src="./images/array-drop-top.svg" alt="Сортировка" class="table_array_top">
+                          <img src="./images/array-drop-down.svg" alt="Сортировка" class="table_array_bottom">
+                        </div>
+                      </th>
+                      <th>
+                        <div>
+                          <span>Название склада краткое</span>
+                        </div>
+                        <div class="table_array">
+                          <img src="./images/array-drop-top.svg" alt="Сортировка" class="table_array_top">
+                          <img src="./images/array-drop-down.svg" alt="Сортировка" class="table_array_bottom">
+                        </div>
+                      </th>
+                      <th>
+                        <div>
+                          <span>№ партнера</span>
+                        </div>
+                        <div class="table_array">
+                          <img src="./images/array-drop-top.svg" alt="Сортировка" class="table_array_top">
+                          <img src="./images/array-drop-down.svg" alt="Сортировка" class="table_array_bottom">
+                        </div>
+                      </th>
+                    </tr>
                   </thead>
                   <tbody>
                   <tr>
@@ -246,24 +298,152 @@
               </div>
             </div>
           </div>
+          <div class="modal_calend">
+            <a class="close_clnd" href="#"></a>
+            <div class="modal_calend_inner">
+              <div class="modal_calend_left">
+                <div class="month_left">
+                  <span class="mo_left_name"> <span class="mo_left"></span> Январь</span>
+                </div>
+                <table>
+                  <tr class="head_calend">
+                    <td>Пн</td>
+                    <td>Вт</td>
+                    <td>Ср</td>
+                    <td>Чт</td>
+                    <td>Пт</td>
+                    <td>Сб</td>
+                    <td>Вс</td>
+                  </tr>
+                  <tr class="body_calend">
+                    <td class="end_day"></td>
+                    <td class="end_day"></td>
+                    <td class="end_day"></td>
+                    <td class="end_day">1</td>
+                    <td class="end_day">2</td>
+                    <td class="month_day">3</td>
+                    <td class="current_day">4</td>
+                  </tr>
+                  <tr class="body_calend">
+                    <td class="month_day">5</td>
+                    <td class="month_day">6</td>
+                    <td class="month_day">7</td>
+                    <td class="month_day">8</td>
+                    <td class="month_day">9</td>
+                    <td class="month_day">10</td>
+                    <td class="month_day">11</td>
+                  </tr>
+                  <tr class="body_calend">
+                    <td class="month_day">12</td>
+                    <td class="month_day">13</td>
+                    <td class="month_day">14</td>
+                    <td class="month_day">15</td>
+                    <td class="month_day">16</td>
+                    <td class="month_day">17</td>
+                    <td class="month_day">18</td>
+                  </tr>
+                  <tr class="body_calend">
+                    <td class="month_day">19</td>
+                    <td class="month_day">20</td>
+                    <td class="month_day">21</td>
+                    <td class="month_day">22</td>
+                    <td class="month_day">23</td>
+                    <td class="month_day">24</td>
+                    <td class="month_day">25</td>
+                  </tr>
+                  <tr class="body_calend">
+                    <td class="month_day">26</td>
+                    <td class="month_day">27</td>
+                    <td class="month_day">28</td>
+                    <td class="month_day">29</td>
+                    <td class="month_day">30</td>
+                    <td class="month_day">31</td>
+                    <td class="end_day"></td>
+                  </tr>
+                </table>
+              </div>
+              <div class="modal_calend_right">
+                <div class="month_right">
+                  <span class="mo_left_name"> <span class="mo_right"></span>Февраль</span>
+                </div>
+                <table>
+                  <tr class="head_calend">
+                    <td>Пн</td>
+                    <td>Вт</td>
+                    <td>Ср</td>
+                    <td>Чт</td>
+                    <td>Пт</td>
+                    <td>Сб</td>
+                    <td>Вс</td>
+                  </tr>
+                  <tr class="body_calend">
+                    <td class="end_day"></td>
+                    <td class="end_day"></td>
+                    <td class="end_day"></td>
+                    <td class="end_day">1</td>
+                    <td class="end_day">2</td>
+                    <td class="month_day">3</td>
+                    <td class="current_day">4</td>
+                  </tr>
+                  <tr class="body_calend">
+                    <td class="month_day">5</td>
+                    <td class="month_day">6</td>
+                    <td class="month_day">7</td>
+                    <td class="month_day">8</td>
+                    <td class="month_day">9</td>
+                    <td class="month_day">10</td>
+                    <td class="month_day">11</td>
+                  </tr>
+                  <tr class="body_calend">
+                    <td class="month_day">12</td>
+                    <td class="month_day">13</td>
+                    <td class="month_day">14</td>
+                    <td class="month_day">15</td>
+                    <td class="month_day">16</td>
+                    <td class="month_day">17</td>
+                    <td class="month_day">18</td>
+                  </tr>
+                  <tr class="body_calend">
+                    <td class="month_day">19</td>
+                    <td class="month_day">20</td>
+                    <td class="month_day">21</td>
+                    <td class="month_day">22</td>
+                    <td class="month_day">23</td>
+                    <td class="month_day">24</td>
+                    <td class="month_day">25</td>
+                  </tr>
+                  <tr class="body_calend">
+                    <td class="month_day">26</td>
+                    <td class="month_day">27</td>
+                    <td class="month_day">28</td>
+                    <td class="month_day">29</td>
+                    <td class="month_day">30</td>
+                    <td class="month_day">31</td>
+                    <td class="end_day"></td>
+                  </tr>
+                </table>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
       <div class="footer">
         <div class="footer_line">
           <div class="title_line">
             <div class="title_line_t filter">
-              Фильтры
+              Фильтры поиска
             </div>
           </div>
           <div class="modal_line">
             <a href="#" class="closebig"></a>
-            <h3>Фильтры</h3>
+            <h3>Фильтры поиска</h3>
             <div class="component_body">
               <div class="l_p">
                 <div class="line_param_input">
                   <div class="label_in">
-                    <input type="text" class="tinput" required />
+                    <input type="text" class="tinput" />
                     <label class="tlabel" for>Документы</label>
+                    <span class="array_down"></span>
                   </div>
                 </div>
               </div>

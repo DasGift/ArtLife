@@ -96,14 +96,21 @@
         </div>
         <div class="component">
           <div class="component_head">
-            <div class="nav_links">
-              <a class="brd_green fill w50 create_account" href="#">Создать аккаунт</a>
+            <div class="nav_links" style="margin-top: 0">
+              <a class="brd_green fill w50 create_account" href="#">Создать возврат</a>
             </div>
           </div>
           <div class="component_head">
-            <div class="component_head_sort">
-              <div class="line_param_input">
-                <label>Период от и до</label>
+            <div class="component_head_sort" style="width: 100%">
+              <div class="line_param_input" style="width: 49%; float: left">
+                <div class="label_in">
+                  <input type="text" class="tinput" />
+                  <label class="tlabel">Поиск по всему</label>
+                  <span class="search"></span>
+                </div>
+              </div>
+              <div class="line_param_input" style="width: 49%; float: left; margin: 2px 0 0 15px">
+                <label style="font-size: 12px; color: #9A9A9A;">Период от и до</label>
                 <input type="text" value="01.04.2020 - 09.09.2020" placeholder=""/>
                 <span class="calendar"></span>
               </div>
@@ -115,13 +122,87 @@
                 <table class="otch_p bordered">
                   <thead>
                   <tr class="head_t">
-                    <th>Номер / Действия</th>
-                    <th>Дата</th>
-                    <th>Тип продаж</th>
-                    <th>№ покупателя</th>
-                    <th>Покупатель</th>
-                    <th>№ партнера</th>
-                    <th>Партнер</th>
+                    <th style="width: 9%">
+                      <div>
+                        <span>Номер / Действия</span>
+                      </div>
+                      <div class="table_array">
+                        <img src="./images/array-drop-top.svg" alt="Сортировка" class="table_array_top">
+                        <img src="./images/array-drop-down.svg" alt="Сортировка" class="table_array_bottom">
+                      </div>
+                    </th>
+                    <th>
+                      <div>
+                        <span>Дата</span>
+                      </div>
+                      <div class="table_array">
+                        <img src="./images/array-drop-top.svg" alt="Сортировка" class="table_array_top">
+                        <img src="./images/array-drop-down.svg" alt="Сортировка" class="table_array_bottom">
+                      </div>
+                    </th>
+                    <th>
+                      <div>
+                        <span>Тип продаж</span>
+                      </div>
+                      <div class="table_array">
+                        <img src="./images/array-drop-top.svg" alt="Сортировка" class="table_array_top">
+                        <img src="./images/array-drop-down.svg" alt="Сортировка" class="table_array_bottom">
+                      </div>
+                    </th>
+                    <th>
+                      <div>
+                        <span>№ покупателя</span>
+                      </div>
+                      <div class="table_array">
+                        <img src="./images/array-drop-top.svg" alt="Сортировка" class="table_array_top">
+                        <img src="./images/array-drop-down.svg" alt="Сортировка" class="table_array_bottom">
+                      </div>
+                    </th>
+                    <th>
+                      <div>
+                        <span>Покупатель</span>
+                      </div>
+                      <div class="table_array">
+                        <img src="./images/array-drop-top.svg" alt="Сортировка" class="table_array_top">
+                        <img src="./images/array-drop-down.svg" alt="Сортировка" class="table_array_bottom">
+                      </div>
+                    </th>
+                    <th>
+                      <div>
+                        <span>№ партнера</span>
+                      </div>
+                      <div class="table_array">
+                        <img src="./images/array-drop-top.svg" alt="Сортировка" class="table_array_top">
+                        <img src="./images/array-drop-down.svg" alt="Сортировка" class="table_array_bottom">
+                      </div>
+                    </th>
+                    <th>
+                      <div>
+                        <span>Партнер</span>
+                      </div>
+                      <div class="table_array">
+                        <img src="./images/array-drop-top.svg" alt="Сортировка" class="table_array_top">
+                        <img src="./images/array-drop-down.svg" alt="Сортировка" class="table_array_bottom">
+                      </div>
+                    </th>
+                    <th>
+                      <div>
+                        <span>Оператор</span>
+                      </div>
+                      <div class="table_array">
+                        <img src="./images/array-drop-top.svg" alt="Сортировка" class="table_array_top">
+                        <img src="./images/array-drop-down.svg" alt="Сортировка" class="table_array_bottom">
+                      </div>
+                    </th>
+                    <th>
+                      <div>
+                        <span>Комментарий</span>
+                      </div>
+                      <div class="table_array">
+                        <img src="./images/array-drop-top.svg" alt="Сортировка" class="table_array_top">
+                        <img src="./images/array-drop-down.svg" alt="Сортировка" class="table_array_bottom">
+                      </div>
+                    </th>
                   </tr>
                   </thead>
                   <tbody>
@@ -138,6 +219,8 @@
                     <td>Круглова Л.А.</td>
                     <td>805903</td>
                     <td>Кондырев</td>
+                    <td>tt - test</td>
+                    <td>tt - test</td>
                   </tr>
                   <tr>
                     <td>
@@ -152,6 +235,8 @@
                     <td>Круглова Л.А.</td>
                     <td>805903</td>
                     <td>Кондырев</td>
+                    <td>tt - test</td>
+                    <td>tt - test</td>
                   </tr>
                   <tr>
                     <td>
@@ -166,6 +251,8 @@
                     <td>Круглова Л.А.</td>
                     <td>805903</td>
                     <td>Кондырев</td>
+                    <td>tt - test</td>
+                    <td>tt - test</td>
                   </tr>
                   <tr>
                     <td>
@@ -180,48 +267,8 @@
                     <td>Круглова Л.А.</td>
                     <td>805903</td>
                     <td>Кондырев</td>
-                  </tr>
-                  <tr>
-                    <td>
-                      <div class="lin_t_top">
-                        <span>R2020-000228</span>
-                        <a href="#" class="lt3">Просмотр</a>
-                      </div>
-                    </td>
-                    <td>29.10.20</td>
-                    <td>Дистрибьюторская</td>
-                    <td>921005</td>
-                    <td>Круглова Л.А.</td>
-                    <td>805903</td>
-                    <td>Кондырев</td>
-                  </tr>
-                  <tr>
-                    <td>
-                      <div class="lin_t_top">
-                        <span>R2020-000228</span>
-                        <a href="#" class="lt3">Просмотр</a>
-                      </div>
-                    </td>
-                    <td>29.10.20</td>
-                    <td>Дистрибьюторская</td>
-                    <td>921005</td>
-                    <td>Круглова Л.А.</td>
-                    <td>805903</td>
-                    <td>Кондырев</td>
-                  </tr>
-                  <tr>
-                    <td>
-                      <div class="lin_t_top">
-                        <span>R2020-000228</span>
-                        <a href="#" class="lt3">Просмотр</a>
-                      </div>
-                    </td>
-                    <td>29.10.20</td>
-                    <td>Дистрибьюторская</td>
-                    <td>921005</td>
-                    <td>Круглова Л.А.</td>
-                    <td>805903</td>
-                    <td>Кондырев</td>
+                    <td>tt - test</td>
+                    <td>tt - test</td>
                   </tr>
                   </tbody>
                 </table>
@@ -366,44 +413,46 @@
               <div class="middle_part">
                 <table class="otch_p bordered">
                   <thead>
-                  <tr class="head_t">
-                    <th>Номер / Действия</th>
-                    <th>Дата</th>
-                    <th>Тип продаж</th>
-                    <th>№ покупателя</th>
-                    <th>Покупатель</th>
-                    <th>№ партнера</th>
-                    <th>Партнер</th>
-                  </tr>
+                    <tr class="head_t">
+                      <th>№</th>
+                      <th>Артикул</th>
+                      <th>Товар</th>
+                      <th>Цена</th>
+                      <th>Кол-во</th>
+                      <th>Стоимость</th>
+                      <th>Возвращено</th>
+                      <th>Баллов всего</th>
+                      <th>Кол-во вернуть</th>
+                    </tr>
                   </thead>
                   <tbody>
                     <tr>
+                      <td>42451467</td>
+                      <td>42451467</td>
+                      <td>Шампунь для волос "Натурасепт" сила трех масел, 250 мл</td>
+                      <td>1076.40</td>
+                      <td>34</td>
+                      <td>1076.40</td>
+                      <td>1076.40</td>
+                      <td>10.3</td>
                       <td>
-                        <div class="lin_t_top">
-                          <span>R2020-000228</span>
-                          <a href="#" class="lt3">Просмотр</a>
-                        </div>
+                        <span>Количество</span>
+                        <input value="23 |" class="input_edit"/>
                       </td>
-                      <td>29.10.20</td>
-                      <td>Дистрибьюторская</td>
-                      <td>921005</td>
-                      <td>Круглова Л.А.</td>
-                      <td>805903</td>
-                      <td>Кондырев</td>
                     </tr>
                     <tr>
+                      <td>42451467</td>
+                      <td>42451467</td>
+                      <td>Шампунь для волос "Натурасепт" сила трех масел, 250 мл</td>
+                      <td>1076.40</td>
+                      <td>34</td>
+                      <td>1076.40</td>
+                      <td>1076.40</td>
+                      <td>10.3</td>
                       <td>
-                        <div class="lin_t_top">
-                          <span>R2020-000228</span>
-                          <a href="#" class="lt3">Просмотр</a>
-                        </div>
+                        <span>Количество</span>
+                        <input value="23 |" class="input_edit"/>
                       </td>
-                      <td>29.10.20</td>
-                      <td>Дистрибьюторская</td>
-                      <td>921005</td>
-                      <td>Круглова Л.А.</td>
-                      <td>805903</td>
-                      <td>Кондырев</td>
                     </tr>
                   </tbody>
                 </table>

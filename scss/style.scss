@@ -272,6 +272,24 @@ input[type="text"] {
 
     &_sort {
       width: 35%;
+
+      label {
+        font-family: FuturaPT-Book;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 12px;
+        line-height: 12px;
+        color: #9A9A9A;
+      }
+
+      input[type='text'] {
+        font-family: FuturaPT-Book;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 16px;
+        color: #383A41;
+      }
     }
   }
 
@@ -507,6 +525,7 @@ input[type="text"] {
   line-height: 12px;
   text-transform: uppercase;
   color: #000000;
+  font-family: FuturaPT-Demi;
 
   &_text {
     margin-right: 10px;
@@ -556,6 +575,9 @@ input[type="text"] {
     margin-right: 15px;
 
     a {
+      font-family: FuturaPT-Book;
+      font-style: normal;
+      font-weight: normal;
       font-size: 14px;
       line-height: 16px;
       color: #32AAA7;
@@ -613,6 +635,7 @@ input[type="text"] {
   }
 
   table tr th {
+    position: relative;
     border-bottom: 1px solid #BABABA;
     background: #DEE2F3;
     padding: 8px;
@@ -670,8 +693,8 @@ table.bordered tr td {
     font-size: 14px;
     line-height: 16px;
     color: #32AAA7;
-    text-decoration: underline;
     margin: 10px 0;
+    border-bottom: 1px dotted;
   }
 }
 
@@ -806,23 +829,34 @@ table.bordered tr td {
 
 .label_in {
   position: relative;
-  padding: 30px 0;
+  padding: 27px 0;
 
   .search {
     display: block;
-    background: url(../images/s_i.svg) no-repeat center;
-    cursor: pointer;
+    position: absolute;
     width: 24px;
     height: 24px;
-    position: absolute;
+    background: url(../images/s_i.svg) no-repeat center;
+    cursor: pointer;
     right: 0;
     bottom: 35px;
+  }
+
+  .array_down {
+    display: block;
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+    right: 0;
+    bottom: 35px;
+    background: url(../images/array_down.png) no-repeat center;
   }
 }
 
 .tlabel{
   position: absolute;
-  top: 42px;
+  //top: 42px;
   transition: .15s ease-in-out;
   color: #a0a0a6;
   pointer-events: none;
@@ -1170,4 +1204,26 @@ table.bordered tr td {
 
 .comment_block {
   display: none;
+}
+
+.table_array {
+  position: absolute;
+  top: 5px;
+  right: 10px;
+  float: right;
+
+  &_bottom {
+    position: absolute;
+    right: 0;
+    top: 20px;
+  }
+}
+
+.input_edit {
+  display: block;
+  width: 40%;
+  border: 0;
+  border-bottom: 1px solid #32AAA7;
+  outline: none;
+  padding: 5px 0;
 }
