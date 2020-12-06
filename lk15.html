@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <title>Главная</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.css" type="text/css" media="screen" />
+  <link rel="stylesheet" href="css/320.css" type="text/css" media="screen" />
+</head>
+<body>
+<div class="fullwidth">
+  <div class="wrapper">
+    <div class="full_content">
+      <div class="left_menu active">
+        <div class="left_menu_top">
+          <div class="logo">
+            <a href="#">
+              <img src="images/logo.png" alt="Артлайф"/>
+              <img class="lhid" src="images/logo_1.png" alt="Артлайф"/>
+            </a>
+          </div>
+        </div>
+        <div class="nav active">
+          <ul>
+            <li>
+              <a href="#" class="nav_parent">
+                  <span class="ico">
+                    <img src="images/i1.png" alt=""/>
+                  </span>
+                <span class="ico_t">Склады</span>
+              </a>
+            </li>
+            <li>
+              <a href="#" class="nav_parent">
+                  <span class="ico">
+                    <img src="images/i2.png" alt=""/>
+                  </span>
+                <span class="ico_t">Лицевые счета</span>
+              </a>
+            </li>
+            <li>
+              <a href="#" class="nav_parent">
+                  <span class="ico">
+                    <img src="images/i3.png" alt=""/>
+                  </span>
+                <span class="ico_t">Товары</span>
+              </a>
+            </li>
+            <li>
+              <a href="#" class="nav_parent">
+                  <span class="ico">
+                    <img src="images/i4.png" alt=""/>
+                  </span>
+                <span class="ico_t">Партнеры</span>
+              </a>
+            </li>
+            <li>
+              <a href="#" class="nav_parent">
+                  <span class="ico">
+                    <img src="images/i5.png" alt=""/>
+                  </span>
+                <span class="ico_t">Приход</span>
+              </a>
+            </li>
+            <li>
+              <a href="#" class="nav_parent">
+                  <span class="ico">
+                    <img src="images/i6.png" alt=""/>
+                  </span>
+                <span class="ico_t">Расход</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="header">
+        <div class="acc_b">
+          <div class="acc_n">
+            <div class="acc_n_text">Название склада</div>
+            <div class="acc_n_ico">
+              <img src="images/avatar.svg" alt=""/>
+            </div>
+            <!--              <div class="acc_nav">-->
+            <!--                <ul>-->
+            <!--                  <li><a href="#">Николай Петрович</a></li>-->
+            <!--                  <li><a href="#"><span>Статус</span>Директор</a></li>-->
+            <!--                  <li class="logout"><a href="#">Выйти</a></li>-->
+            <!--                </ul>-->
+            <!--              </div>-->
+          </div>
+        </div>
+      </div>
+      <div class="content">
+        <div class="c_head">
+          <h1>Продажи</h1>
+        </div>
+        <div class="component">
+          <div class="component_head" style="margin-bottom: 0">
+            <div class="component_head_sort" style="width: 100%">
+              <div class="line_param_input" style="width: 49%; float: left">
+                <div class="label_in">
+                  <input type="text" class="tinput" />
+                  <label class="tlabel">Поиск по всему</label>
+                  <span class="search"></span>
+                </div>
+              </div>
+              <div class="line_param_input" style="width: 49%; float: left; margin: 2px 0 0 15px">
+                <label style="font-size: 12px; color: #9A9A9A;">Период от и до</label>
+                <input type="text" value="Период от и до" placeholder=""/>
+                <span class="calendar"></span>
+              </div>
+            </div>
+            <div class="component_tags">
+              <div class="tags">2020-000255<span class="closes"></span></div>
+            </div>
+          </div>
+          <div class="component_body">
+            <div class="component_action">
+              <div class="nav_top" style="margin-bottom: 30px">
+                <span style="float: left">Создать:</span>
+                <ul>
+                  <li><a href="#">Клиентскую / Дистрибьюторскую продажу</a></li>
+                  <li><a href="#">Розничную продажу</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="f_part">
+              <div class="nav_top">
+                <ul>
+                  <li><a href="#">PDF</a></li>
+                  <li><a href="#">Печать всего</a></li>
+                  <li><a href="#">Печать документа</a></li>
+                </ul>
+              </div>
+              <div class="middle_part">
+                <table class="otch_p bordered">
+                  <thead>
+                    <tr class="head_t">
+                      <th>Номер</th>
+                      <th>Дата</th>
+                      <th>Тип продажи</th>
+                      <th style="width: 15%">№ покупателя</th>
+                      <th>Покупатель</th>
+                      <th>№ партнера</th>
+                      <th>Партнер</th>
+                      <th>Оператор</th>
+                      <th>Сумма</th>
+                      <th>Расчетный период</th>
+                      <th>Склад</th>
+                      <th>Комментарий</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>
+                        <div class="lin_t_top">
+                          <span>2020-000255</span>
+                          <a href="#" class="lt3">Просмотр</a>
+                        </div>
+                      </td>
+                      <td>23.10.2020</td>
+                      <td>Дистрибьюторская</td>
+                      <td>910283</td>
+                      <td>Кондырева Я. В.</td>
+                      <td>897199</td>
+                      <td>Кондырева Я. В.</td>
+                      <td>tt - test</td>
+                      <td>232444</td>
+                      <td>март 2020 г.</td>
+                      <td>Томск-Кондырева</td>
+                      <td>Большой и длинный комментарий</td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <div class="lin_t_top">
+                          <span>2020-000255</span>
+                          <a href="#" class="lt3">Просмотр</a>
+                        </div>
+                      </td>
+                      <td>23.10.2020</td>
+                      <td>Дистрибьюторская</td>
+                      <td>910283</td>
+                      <td>Кондырева Я. В.</td>
+                      <td>897199</td>
+                      <td>Кондырева Я. В.</td>
+                      <td>tt - test</td>
+                      <td>232444</td>
+                      <td>март 2020 г.</td>
+                      <td>Томск-Кондырева</td>
+                      <td>Большой и длинный комментарий</td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <div class="lin_t_top">
+                          <span>2020-000255</span>
+                          <a href="#" class="lt3">Просмотр</a>
+                        </div>
+                      </td>
+                      <td>23.10.2020</td>
+                      <td>Дистрибьюторская</td>
+                      <td>910283</td>
+                      <td>Кондырева Я. В.</td>
+                      <td>897199</td>
+                      <td>Кондырева Я. В.</td>
+                      <td>tt - test</td>
+                      <td>232444</td>
+                      <td>март 2020 г.</td>
+                      <td>Томск-Кондырева</td>
+                      <td>Большой и длинный комментарий</td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <div class="lin_t_top">
+                          <span>2020-000255</span>
+                          <a href="#" class="lt3">Просмотр</a>
+                        </div>
+                      </td>
+                      <td>23.10.2020</td>
+                      <td>Дистрибьюторская</td>
+                      <td>910283</td>
+                      <td>Кондырева Я. В.</td>
+                      <td>897199</td>
+                      <td>Кондырева Я. В.</td>
+                      <td>tt - test</td>
+                      <td>232444</td>
+                      <td>март 2020 г.</td>
+                      <td>Томск-Кондырева</td>
+                      <td>Большой и длинный комментарий</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+          <div class="modal_calend">
+            <a class="close_clnd" href="#"></a>
+            <div class="modal_calend_inner">
+              <div class="modal_calend_left">
+                <div class="month_left">
+                  <span class="mo_left_name"> <span class="mo_left"></span> Январь</span>
+                </div>
+                <table>
+                  <tr class="head_calend">
+                    <td>Пн</td>
+                    <td>Вт</td>
+                    <td>Ср</td>
+                    <td>Чт</td>
+                    <td>Пт</td>
+                    <td>Сб</td>
+                    <td>Вс</td>
+                  </tr>
+                  <tr class="body_calend">
+                    <td class="end_day"></td>
+                    <td class="end_day"></td>
+                    <td class="end_day"></td>
+                    <td class="end_day">1</td>
+                    <td class="end_day">2</td>
+                    <td class="month_day">3</td>
+                    <td class="current_day">4</td>
+                  </tr>
+                  <tr class="body_calend">
+                    <td class="month_day">5</td>
+                    <td class="month_day">6</td>
+                    <td class="month_day">7</td>
+                    <td class="month_day">8</td>
+                    <td class="month_day">9</td>
+                    <td class="month_day">10</td>
+                    <td class="month_day">11</td>
+                  </tr>
+                  <tr class="body_calend">
+                    <td class="month_day">12</td>
+                    <td class="month_day">13</td>
+                    <td class="month_day">14</td>
+                    <td class="month_day">15</td>
+                    <td class="month_day">16</td>
+                    <td class="month_day">17</td>
+                    <td class="month_day">18</td>
+                  </tr>
+                  <tr class="body_calend">
+                    <td class="month_day">19</td>
+                    <td class="month_day">20</td>
+                    <td class="month_day">21</td>
+                    <td class="month_day">22</td>
+                    <td class="month_day">23</td>
+                    <td class="month_day">24</td>
+                    <td class="month_day">25</td>
+                  </tr>
+                  <tr class="body_calend">
+                    <td class="month_day">26</td>
+                    <td class="month_day">27</td>
+                    <td class="month_day">28</td>
+                    <td class="month_day">29</td>
+                    <td class="month_day">30</td>
+                    <td class="month_day">31</td>
+                    <td class="end_day"></td>
+                  </tr>
+                </table>
+              </div>
+              <div class="modal_calend_right">
+                <div class="month_right">
+                  <span class="mo_left_name"> <span class="mo_right"></span>Февраль</span>
+                </div>
+                <table>
+                  <tr class="head_calend">
+                    <td>Пн</td>
+                    <td>Вт</td>
+                    <td>Ср</td>
+                    <td>Чт</td>
+                    <td>Пт</td>
+                    <td>Сб</td>
+                    <td>Вс</td>
+                  </tr>
+                  <tr class="body_calend">
+                    <td class="end_day"></td>
+                    <td class="end_day"></td>
+                    <td class="end_day"></td>
+                    <td class="end_day">1</td>
+                    <td class="end_day">2</td>
+                    <td class="month_day">3</td>
+                    <td class="current_day">4</td>
+                  </tr>
+                  <tr class="body_calend">
+                    <td class="month_day">5</td>
+                    <td class="month_day">6</td>
+                    <td class="month_day">7</td>
+                    <td class="month_day">8</td>
+                    <td class="month_day">9</td>
+                    <td class="month_day">10</td>
+                    <td class="month_day">11</td>
+                  </tr>
+                  <tr class="body_calend">
+                    <td class="month_day">12</td>
+                    <td class="month_day">13</td>
+                    <td class="month_day">14</td>
+                    <td class="month_day">15</td>
+                    <td class="month_day">16</td>
+                    <td class="month_day">17</td>
+                    <td class="month_day">18</td>
+                  </tr>
+                  <tr class="body_calend">
+                    <td class="month_day">19</td>
+                    <td class="month_day">20</td>
+                    <td class="month_day">21</td>
+                    <td class="month_day">22</td>
+                    <td class="month_day">23</td>
+                    <td class="month_day">24</td>
+                    <td class="month_day">25</td>
+                  </tr>
+                  <tr class="body_calend">
+                    <td class="month_day">26</td>
+                    <td class="month_day">27</td>
+                    <td class="month_day">28</td>
+                    <td class="month_day">29</td>
+                    <td class="month_day">30</td>
+                    <td class="month_day">31</td>
+                    <td class="end_day"></td>
+                  </tr>
+                </table>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer">
+        <div class="footer_line">
+          <div class="title_line">
+            <div class="title_line_t search">Фильтры поиска</div>
+          </div>
+          <div class="modal_line">
+            <a href="#" class="closebig"></a>
+            <h3>Накладная № 2020-000255</h3>
+            <div class="component_body">
+              <div class="f_part" style="padding-bottom: 0;">
+                <div class="middle_part">
+                  <table class="otch_p bordered">
+                    <thead>
+                      <tr class="head_t">
+                        <th>№</th>
+                        <th>Артикул</th>
+                        <th>Товар</th>
+                        <th>Цена</th>
+                        <th>Кол-во</th>
+                        <th>Стоимость</th>
+                        <th>Возвращено</th>
+                        <th>Баллов всего</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>42451467</td>
+                        <td>42451467</td>
+                        <td>Шампунь для волос "Натурасепт" сила трех масел, 250 мл</td>
+                        <td>1076.40</td>
+                        <td>34</td>
+                        <td>1076.40</td>
+                        <td>1076.40</td>
+                        <td>10.3</td>
+                      </tr>
+                      <tr>
+                        <td>42451467</td>
+                        <td>42451467</td>
+                        <td>Шампунь для волос "Натурасепт" сила трех масел, 250 мл</td>
+                        <td>1076.40</td>
+                        <td>34</td>
+                        <td>1076.40</td>
+                        <td>1076.40</td>
+                        <td>10.3</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8/jquery.min.js"></script>
+<script type="text/javascript" src="js/jquery.maskedinput.min.js"></script>
+<script type="text/javascript" src="js/new.js"></script>
+
+</body>
+</html>
+
