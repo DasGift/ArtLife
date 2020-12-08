@@ -542,6 +542,8 @@ input[type="text"] {
 }
 
 .c_head {
+  padding-left: 0;
+
   a {
     display: none;
     line-height: 16px;
@@ -1339,3 +1341,5 @@ table.bordered tr td {
   background: url(../images/exit.svg) no-repeat 100% center;
   color: #9A9A9A;
 }
+
+

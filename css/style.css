@@ -505,6 +505,9 @@ input[type=text] {
   box-sizing: border-box;
 }
 
+.c_head {
+  padding-left: 0;
+}
 .c_head a {
   display: none;
   line-height: 16px;
