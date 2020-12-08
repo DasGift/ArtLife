@@ -81,13 +81,13 @@
             <div class="acc_n_ico">
               <img src="images/avatar.svg" alt=""/>
             </div>
-            <!--              <div class="acc_nav">-->
-            <!--                <ul>-->
-            <!--                  <li><a href="#">Николай Петрович</a></li>-->
-            <!--                  <li><a href="#"><span>Статус</span>Директор</a></li>-->
-            <!--                  <li class="logout"><a href="#">Выйти</a></li>-->
-            <!--                </ul>-->
-            <!--              </div>-->
+            <div class="acc_nav">
+              <ul>
+                <li><a href="#">Название склада</a></li>
+                <li><a href="#"><span>Статус</span>Директор</a></li>
+                <li class="logout"><a href="#">Выйти</a></li>
+              </ul>
+            </div>
           </div>
         </div>
       </div>
@@ -97,11 +97,25 @@
         </div>
         <div class="component">
           <div class="component_head">
-            <div class="component_head_sort">
-              <div class="line_param_input">
+            <div class="component_head_sort" style="width: 100%">
+              <div class="line_param_input" style="width: 49%; float: left">
                 <label>Период от и до</label>
                 <input type="text" value="01.04.2020 - 09.09.2020" placeholder=""/>
                 <span class="calendar"></span>
+              </div>
+              <div class="line_param_input" style="width: 49%; float: left; margin: 25px 0 0 15px">
+                <div class="check_block">
+                  <input type="checkbox" class="line_param_checkbox" id="period" checked/>
+                  <label class="line_param_label" for="period">Наличка</label>
+                </div>
+                <div class="check_block">
+                  <input type="checkbox" class="line_param_checkbox" id="cashless" checked/>
+                  <label class="line_param_label" for="cashless">Безнал</label>
+                </div>
+                <div class="check_block">
+                  <input type="checkbox" class="line_param_checkbox" id="personal"/>
+                  <label class="line_param_label" for="personal">Лицевой</label>
+                </div>
               </div>
             </div>
           </div>
@@ -114,83 +128,107 @@
                 </ul>
               </div>
               <div class="middle_part">
-                <table>
+                <table class="bordered">
                   <tr class="head_t">
-                    <th>Дата операции</th>
-                    <th>На счет / Со счета</th>
-                    <th>Тип операции</th>
-                    <th>Комментарий</th>
-                    <th>Пользователь</th>
+                    <th>
+                      <div>
+                        <span>Дата</span>
+                      </div>
+                      <div class="table_array">
+                        <img src="./images/array-drop-top.svg" alt="Сортировка" class="table_array_top">
+                        <img src="./images/array-drop-down.svg" alt="Сортировка" class="table_array_bottom">
+                      </div>
+                    </th>
+                    <th>
+                      <div>
+                        <span>Начисление</span>
+                      </div>
+                      <div class="table_array">
+                        <img src="./images/array-drop-top.svg" alt="Сортировка" class="table_array_top">
+                        <img src="./images/array-drop-down.svg" alt="Сортировка" class="table_array_bottom">
+                      </div>
+                    </th>
+                    <th>
+                      <div>
+                        <span>Списание</span>
+                      </div>
+                      <div class="table_array">
+                        <img src="./images/array-drop-top.svg" alt="Сортировка" class="table_array_top">
+                        <img src="./images/array-drop-down.svg" alt="Сортировка" class="table_array_bottom">
+                      </div>
+                    </th>
+                    <th style="width: 10%">
+                      <div>
+                        <span>Тип операции</span>
+                      </div>
+                      <div class="table_array">
+                        <img src="./images/array-drop-top.svg" alt="Сортировка" class="table_array_top">
+                        <img src="./images/array-drop-down.svg" alt="Сортировка" class="table_array_bottom">
+                      </div>
+                    </th>
+                    <th>
+                      <div>
+                        <span>Комментарий</span>
+                      </div>
+                      <div class="table_array">
+                        <img src="./images/array-drop-top.svg" alt="Сортировка" class="table_array_top">
+                        <img src="./images/array-drop-down.svg" alt="Сортировка" class="table_array_bottom">
+                      </div>
+                    </th>
+                    <th>
+                      <div>
+                        <span>Пользователь</span>
+                      </div>
+                      <div class="table_array">
+                        <img src="./images/array-drop-top.svg" alt="Сортировка" class="table_array_top">
+                        <img src="./images/array-drop-down.svg" alt="Сортировка" class="table_array_bottom">
+                      </div>
+                    </th>
+                    <th style="width: 10%">
+                      <div>
+                        <span>Склад пользователя</span>
+                      </div>
+                      <div class="table_array">
+                        <img src="./images/array-drop-top.svg" alt="Сортировка" class="table_array_top">
+                        <img src="./images/array-drop-down.svg" alt="Сортировка" class="table_array_bottom">
+                      </div>
+                    </th>
                   </tr>
                   <tr class="tbody">
-                    <td>01.03.2020</td>
-                    <td>33547,9</td>
+                    <td>21.10.2020</td>
+                    <td>532</td>
+                    <td>205</td>
                     <td>Розничное вознаграждение</td>
-                    <td>Розничное вознаграждение Розничная продажа 805903</td>
-                    <td>Администратор</td>
+                    <td>Розничное вознаграждение за 921012 897705</td>
+                    <td>Наименование</td>
+                    <td>Наименование</td>
                   </tr>
                   <tr class="tbody">
-                    <td>01.03.2020</td>
-                    <td>33547,9</td>
+                    <td>21.10.2020</td>
+                    <td>532</td>
+                    <td>205</td>
                     <td>Розничное вознаграждение</td>
-                    <td>Розничное вознаграждение Розничная продажа 805903</td>
-                    <td>Администратор</td>
+                    <td>Розничное вознаграждение за 921012 897705</td>
+                    <td>Наименование</td>
+                    <td>Наименование</td>
                   </tr>
                   <tr class="tbody">
-                    <td>01.03.2020</td>
-                    <td>33547,9</td>
+                    <td>21.10.2020</td>
+                    <td>532</td>
+                    <td>205</td>
                     <td>Розничное вознаграждение</td>
-                    <td>Розничное вознаграждение Розничная продажа 805903</td>
-                    <td>Администратор</td>
+                    <td>Розничное вознаграждение за 921012 897705</td>
+                    <td>Наименование</td>
+                    <td>Наименование</td>
                   </tr>
                   <tr class="tbody">
-                    <td>01.03.2020</td>
-                    <td>33547,9</td>
+                    <td>21.10.2020</td>
+                    <td>532</td>
+                    <td>205</td>
                     <td>Розничное вознаграждение</td>
-                    <td>Розничное вознаграждение Розничная продажа 805903</td>
-                    <td>Администратор</td>
-                  </tr>
-                  <tr class="tbody">
-                    <td>01.03.2020</td>
-                    <td>33547,9</td>
-                    <td>Розничное вознаграждение</td>
-                    <td>Розничное вознаграждение Розничная продажа 805903</td>
-                    <td>Администратор</td>
-                  </tr>
-                  <tr class="tbody">
-                    <td>01.03.2020</td>
-                    <td>33547,9</td>
-                    <td>Розничное вознаграждение</td>
-                    <td>Розничное вознаграждение Розничная продажа 805903</td>
-                    <td>Администратор</td>
-                  </tr>
-                  <tr class="tbody">
-                    <td>01.03.2020</td>
-                    <td>33547,9</td>
-                    <td>Розничное вознаграждение</td>
-                    <td>Розничное вознаграждение Розничная продажа 805903</td>
-                    <td>Администратор</td>
-                  </tr>
-                  <tr class="tbody">
-                    <td>01.03.2020</td>
-                    <td>33547,9</td>
-                    <td>Розничное вознаграждение</td>
-                    <td>Розничное вознаграждение Розничная продажа 805903</td>
-                    <td>Администратор</td>
-                  </tr>
-                  <tr class="tbody">
-                    <td>01.03.2020</td>
-                    <td>33547,9</td>
-                    <td>Розничное вознаграждение</td>
-                    <td>Розничное вознаграждение Розничная продажа 805903</td>
-                    <td>Администратор</td>
-                  </tr>
-                  <tr class="tbody">
-                    <td>01.03.2020</td>
-                    <td>33547,9</td>
-                    <td>Розничное вознаграждение</td>
-                    <td>Розничное вознаграждение Розничная продажа 805903</td>
-                    <td>Администратор</td>
+                    <td>Розничное вознаграждение за 921012 897705</td>
+                    <td>Наименование</td>
+                    <td>Наименование</td>
                   </tr>
                 </table>
               </div>

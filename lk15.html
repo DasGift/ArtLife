@@ -80,13 +80,13 @@
             <div class="acc_n_ico">
               <img src="images/avatar.svg" alt=""/>
             </div>
-            <!--              <div class="acc_nav">-->
-            <!--                <ul>-->
-            <!--                  <li><a href="#">Николай Петрович</a></li>-->
-            <!--                  <li><a href="#"><span>Статус</span>Директор</a></li>-->
-            <!--                  <li class="logout"><a href="#">Выйти</a></li>-->
-            <!--                </ul>-->
-            <!--              </div>-->
+            <div class="acc_nav">
+              <ul>
+                <li><a href="#">Название склада</a></li>
+                <li><a href="#"><span>Статус</span>Директор</a></li>
+                <li class="logout"><a href="#">Выйти</a></li>
+              </ul>
+            </div>
           </div>
         </div>
       </div>
@@ -133,25 +133,160 @@
                 </ul>
               </div>
               <div class="middle_part">
-                <table class="otch_p bordered">
-                  <thead>
+                <div style="overflow-x: scroll">
+                  <table class="otch_p bordered">
+                    <thead>
                     <tr class="head_t">
-                      <th>Номер</th>
-                      <th>Дата</th>
-                      <th>Тип продажи</th>
-                      <th style="width: 15%">№ покупателя</th>
-                      <th>Покупатель</th>
-                      <th>№ партнера</th>
-                      <th>Партнер</th>
-                      <th>Оператор</th>
-                      <th>Сумма</th>
-                      <th>Расчетный период</th>
-                      <th>Склад</th>
-                      <th>Комментарий</th>
+                      <th>
+                        <div>
+                          <span>Номер</span>
+                        </div>
+                        <div class="table_array">
+                          <img src="./images/array-drop-top.svg" alt="Сортировка" class="table_array_top">
+                          <img src="./images/array-drop-down.svg" alt="Сортировка" class="table_array_bottom">
+                        </div>
+                      </th>
+                      <th>
+                        <div>
+                          <span>Дата</span>
+                        </div>
+                        <div class="table_array">
+                          <img src="./images/array-drop-top.svg" alt="Сортировка" class="table_array_top">
+                          <img src="./images/array-drop-down.svg" alt="Сортировка" class="table_array_bottom">
+                        </div>
+                      </th>
+                      <th>
+                        <div>
+                          <span>Тип продажи</span>
+                        </div>
+                        <div class="table_array">
+                          <img src="./images/array-drop-top.svg" alt="Сортировка" class="table_array_top">
+                          <img src="./images/array-drop-down.svg" alt="Сортировка" class="table_array_bottom">
+                        </div>
+                      </th>
+                      <th>
+                        <div>
+                          <span>№ покупателя</span>
+                        </div>
+                        <div class="table_array">
+                          <img src="./images/array-drop-top.svg" alt="Сортировка" class="table_array_top">
+                          <img src="./images/array-drop-down.svg" alt="Сортировка" class="table_array_bottom">
+                        </div>
+                      </th>
+                      <th>
+                        <div>
+                          <span>Покупатель</span>
+                        </div>
+                        <div class="table_array">
+                          <img src="./images/array-drop-top.svg" alt="Сортировка" class="table_array_top">
+                          <img src="./images/array-drop-down.svg" alt="Сортировка" class="table_array_bottom">
+                        </div>
+                      </th>
+                      <th>
+                        <div>
+                          <span>№ партнера</span>
+                        </div>
+                        <div class="table_array">
+                          <img src="./images/array-drop-top.svg" alt="Сортировка" class="table_array_top">
+                          <img src="./images/array-drop-down.svg" alt="Сортировка" class="table_array_bottom">
+                        </div>
+                      </th>
+                      <th>
+                        <div>
+                          <span>Партнер</span>
+                        </div>
+                        <div class="table_array">
+                          <img src="./images/array-drop-top.svg" alt="Сортировка" class="table_array_top">
+                          <img src="./images/array-drop-down.svg" alt="Сортировка" class="table_array_bottom">
+                        </div>
+                      </th>
+                      <th>
+                        <div>
+                          <span>Оператор</span>
+                        </div>
+                        <div class="table_array">
+                          <img src="./images/array-drop-top.svg" alt="Сортировка" class="table_array_top">
+                          <img src="./images/array-drop-down.svg" alt="Сортировка" class="table_array_bottom">
+                        </div>
+                      </th>
+                      <th>
+                        <div>
+                          <span>Сумма</span>
+                        </div>
+                        <div class="table_array">
+                          <img src="./images/array-drop-top.svg" alt="Сортировка" class="table_array_top">
+                          <img src="./images/array-drop-down.svg" alt="Сортировка" class="table_array_bottom">
+                        </div>
+                      </th>
+                      <th>
+                        <div>
+                          <span>Расчетный период</span>
+                        </div>
+                        <div class="table_array">
+                          <img src="./images/array-drop-top.svg" alt="Сортировка" class="table_array_top">
+                          <img src="./images/array-drop-down.svg" alt="Сортировка" class="table_array_bottom">
+                        </div>
+                      </th>
+                      <th>
+                        <div>
+                          <span>Склад</span>
+                        </div>
+                        <div class="table_array">
+                          <img src="./images/array-drop-top.svg" alt="Сортировка" class="table_array_top">
+                          <img src="./images/array-drop-down.svg" alt="Сортировка" class="table_array_bottom">
+                        </div>
+                      </th>
+                      <th>
+                        <div>
+                          <span>Комментарий</span>
+                        </div>
+                        <div class="table_array">
+                          <img src="./images/array-drop-top.svg" alt="Сортировка" class="table_array_top">
+                          <img src="./images/array-drop-down.svg" alt="Сортировка" class="table_array_bottom">
+                        </div>
+                      </th>
                     </tr>
-                  </thead>
-                  <tbody>
-                    <tr>
+                    </thead>
+                    <tbody>
+                    <tr style="background-color: #E6F4F4;">
+                      <td>
+                        <div class="lin_t_top">
+                          <span>2020-000255</span>
+                          <a href="#" class="lt3">Просмотр</a>
+                        </div>
+                      </td>
+                      <td>23.10.2020</td>
+                      <td>Дистрибьюторская</td>
+                      <td>910283</td>
+                      <td>Кондырева Я. В.</td>
+                      <td>897199</td>
+                      <td>Кондырева Я. В.</td>
+                      <td>tt - test</td>
+                      <td>232444</td>
+                      <td>март 2020 г.</td>
+                      <td>Томск-Кондырева</td>
+                      <td>Большой и длинный комментарий</td>
+                    </tr>
+                    <tr style="background-color: rgba(237, 26, 46, 0.16);">
+                      <td>
+                        <div class="lin_t_top">
+                          <span>2020-000255</span>
+                          <a href="#" class="lt3">Просмотр</a>
+                        </div>
+                      </td>
+                      <td>23.10.2020</td>
+                      <td>Дистрибьюторская</td>
+                      <td>910283</td>
+                      <td>Кондырева Я. В.</td>
+                      <td>897199</td>
+                      <td>Кондырева Я. В.</td>
+                      <td>tt - test</td>
+                      <td>232444</td>
+                      <td>март 2020 г.</td>
+                      <td>Томск-Кондырева</td>
+                      <td>Большой и длинный комментарий</td>
+                    </tr>
+                    <tr style="background-color: #CEEBEA;">
                       <td>
                         <div class="lin_t_top">
                           <span>2020-000255</span>
@@ -189,46 +324,9 @@
                       <td>Томск-Кондырева</td>
                       <td>Большой и длинный комментарий</td>
                     </tr>
-                    <tr>
-                      <td>
-                        <div class="lin_t_top">
-                          <span>2020-000255</span>
-                          <a href="#" class="lt3">Просмотр</a>
-                        </div>
-                      </td>
-                      <td>23.10.2020</td>
-                      <td>Дистрибьюторская</td>
-                      <td>910283</td>
-                      <td>Кондырева Я. В.</td>
-                      <td>897199</td>
-                      <td>Кондырева Я. В.</td>
-                      <td>tt - test</td>
-                      <td>232444</td>
-                      <td>март 2020 г.</td>
-                      <td>Томск-Кондырева</td>
-                      <td>Большой и длинный комментарий</td>
-                    </tr>
-                    <tr>
-                      <td>
-                        <div class="lin_t_top">
-                          <span>2020-000255</span>
-                          <a href="#" class="lt3">Просмотр</a>
-                        </div>
-                      </td>
-                      <td>23.10.2020</td>
-                      <td>Дистрибьюторская</td>
-                      <td>910283</td>
-                      <td>Кондырева Я. В.</td>
-                      <td>897199</td>
-                      <td>Кондырева Я. В.</td>
-                      <td>tt - test</td>
-                      <td>232444</td>
-                      <td>март 2020 г.</td>
-                      <td>Томск-Кондырева</td>
-                      <td>Большой и длинный комментарий</td>
-                    </tr>
-                  </tbody>
-                </table>
+                    </tbody>
+                  </table>
+                </div>
               </div>
             </div>
           </div>
@@ -364,7 +462,7 @@
       <div class="footer">
         <div class="footer_line">
           <div class="title_line">
-            <div class="title_line_t search">Фильтры поиска</div>
+            <div class="title_line_t filter">Фильтры поиска</div>
           </div>
           <div class="modal_line">
             <a href="#" class="closebig"></a>
@@ -372,6 +470,11 @@
             <div class="component_body">
               <div class="f_part" style="padding-bottom: 0;">
                 <div class="middle_part">
+                  <div class="nav_top">
+                    <ul>
+                      <li><a href="#">Печать документа</a></li>
+                    </ul>
+                  </div>
                   <table class="otch_p bordered">
                     <thead>
                       <tr class="head_t">

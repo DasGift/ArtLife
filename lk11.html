@@ -80,13 +80,13 @@
             <div class="acc_n_ico">
               <img src="images/avatar.svg" alt=""/>
             </div>
-            <!--              <div class="acc_nav">-->
-            <!--                <ul>-->
-            <!--                  <li><a href="#">Николай Петрович</a></li>-->
-            <!--                  <li><a href="#"><span>Статус</span>Директор</a></li>-->
-            <!--                  <li class="logout"><a href="#">Выйти</a></li>-->
-            <!--                </ul>-->
-            <!--              </div>-->
+            <div class="acc_nav">
+              <ul>
+                <li><a href="#">Название склада</a></li>
+                <li><a href="#"><span>Статус</span>Директор</a></li>
+                <li class="logout"><a href="#">Выйти</a></li>
+              </ul>
+            </div>
           </div>
         </div>
       </div>
@@ -439,12 +439,26 @@
       <div class="footer">
         <div class="footer_line">
           <div class="title_line">
-            <div class="title_line_t search">Фильтры поиска</div>
+            <div class="title_line_t filter">Фильтры поиска</div>
           </div>
           <div class="modal_line">
             <a href="#" class="closebig"></a>
             <h3>Фильтры поиска</h3>
             <div class="component_body">
+              <div class="line_param_input" style="float: left; margin: 25px 0 0 15px">
+                <div class="modal_check_block">
+                  <input type="checkbox" class="line_param_checkbox" id="period" checked/>
+                  <label class="line_param_label" for="period">Показывать терминированных</label>
+                </div>
+                <div class="modal_check_block">
+                  <input type="checkbox" class="line_param_checkbox" id="cashless" checked/>
+                  <label class="line_param_label" for="cashless">Показывать только с не нулевыми ЛО</label>
+                </div>
+                <div class="modal_check_block" style="width: 15%; text-align: center;">
+                  <input type="checkbox" class="line_param_checkbox" id="personal"/>
+                  <label class="line_param_label" for="personal" style="margin-left: 0;">Показывать партнеров нижестоящих складов</label>
+                </div>
+              </div>
               <div class="r_p" style="float: right; padding-right: 0">
                 <div class="nav_links">
                   <a class="brd_green fill w50" href="#">Показать</a>

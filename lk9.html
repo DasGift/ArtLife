@@ -80,13 +80,13 @@
             <div class="acc_n_ico">
               <img src="images/avatar.svg" alt=""/>
             </div>
-            <!--              <div class="acc_nav">-->
-            <!--                <ul>-->
-            <!--                  <li><a href="#">Николай Петрович</a></li>-->
-            <!--                  <li><a href="#"><span>Статус</span>Директор</a></li>-->
-            <!--                  <li class="logout"><a href="#">Выйти</a></li>-->
-            <!--                </ul>-->
-            <!--              </div>-->
+            <div class="acc_nav">
+              <ul>
+                <li><a href="#">Название склада</a></li>
+                <li><a href="#"><span>Статус</span>Директор</a></li>
+                <li class="logout"><a href="#">Выйти</a></li>
+              </ul>
+            </div>
           </div>
         </div>
       </div>
@@ -106,7 +106,7 @@
               </div>
               <div class="line_param_input" style="width: 49%; float: left; margin: 2px 0 0 15px">
                 <label style="font-size: 12px; color: #9A9A9A;">Период от и до</label>
-                <input type="text" value="Период от и до" placeholder=""/>
+                <input type="text" value="01.04.2020 - 09.09.2020" placeholder=""/>
                 <span class="calendar"></span>
               </div>
             </div>
@@ -123,100 +123,101 @@
                 </ul>
               </div>
               <div class="middle_part">
-                <table class="otch_p bordered">
-                  <thead>
+                <div style="overflow-x: scroll">
+                  <table class="otch_p bordered">
+                    <thead>
                     <tr class="head_t">
-                    <th style="width: 9%">
-                      <div>
-                        <span>ID товара</span>
-                      </div>
-                      <div class="table_array">
-                        <img src="./images/array-drop-top.svg" alt="Сортировка" class="table_array_top">
-                        <img src="./images/array-drop-down.svg" alt="Сортировка" class="table_array_bottom">
-                      </div>
-                    </th>
-                    <th>
-                      <div>
-                        <span>Артикул</span>
-                      </div>
-                      <div class="table_array">
-                        <img src="./images/array-drop-top.svg" alt="Сортировка" class="table_array_top">
-                        <img src="./images/array-drop-down.svg" alt="Сортировка" class="table_array_bottom">
-                      </div>
-                    </th>
-                    <th>
-                      <div>
-                        <span>Группа товаров</span>
-                      </div>
-                      <div class="table_array">
-                        <img src="./images/array-drop-top.svg" alt="Сортировка" class="table_array_top">
-                        <img src="./images/array-drop-down.svg" alt="Сортировка" class="table_array_bottom">
-                      </div>
-                    </th>
-                    <th>
-                      <div>
-                        <span>Наименование</span>
-                      </div>
-                      <div class="table_array">
-                        <img src="./images/array-drop-top.svg" alt="Сортировка" class="table_array_top">
-                        <img src="./images/array-drop-down.svg" alt="Сортировка" class="table_array_bottom">
-                      </div>
-                    </th>
-                    <th>
-                      <div>
-                        <span>Остаток на начало периода</span>
-                      </div>
-                      <div class="table_array">
-                        <img src="./images/array-drop-top.svg" alt="Сортировка" class="table_array_top">
-                        <img src="./images/array-drop-down.svg" alt="Сортировка" class="table_array_bottom">
-                      </div>
-                    </th>
-                    <th>
-                      <div>
-                        <span>Продано дистрибьюторам</span>
-                      </div>
-                      <div class="table_array">
-                        <img src="./images/array-drop-top.svg" alt="Сортировка" class="table_array_top">
-                        <img src="./images/array-drop-down.svg" alt="Сортировка" class="table_array_bottom">
-                      </div>
-                    </th>
-                    <th>
-                      <div>
-                        <span>Возвраты от дистрибьюторов</span>
-                      </div>
-                      <div class="table_array">
-                        <img src="./images/array-drop-top.svg" alt="Сортировка" class="table_array_top">
-                        <img src="./images/array-drop-down.svg" alt="Сортировка" class="table_array_bottom">
-                      </div>
-                    </th>
-                    <th>
-                      <div>
-                        <span>Отгружено нижестоящим</span>
-                      </div>
-                      <div class="table_array">
-                        <img src="./images/array-drop-top.svg" alt="Сортировка" class="table_array_top">
-                        <img src="./images/array-drop-down.svg" alt="Сортировка" class="table_array_bottom">
-                      </div>
-                    </th>
-                    <th>
-                      <div>
-                        <span>Оприходованно от вышестоящих</span>
-                      </div>
-                      <div class="table_array">
-                        <img src="./images/array-drop-top.svg" alt="Сортировка" class="table_array_top">
-                        <img src="./images/array-drop-down.svg" alt="Сортировка" class="table_array_bottom">
-                      </div>
-                    </th>
-                    <th>
-                      <div>
-                        <span>Пополнение</span>
-                      </div>
-                      <div class="table_array">
-                        <img src="./images/array-drop-top.svg" alt="Сортировка" class="table_array_top">
-                        <img src="./images/array-drop-down.svg" alt="Сортировка" class="table_array_bottom">
-                      </div>
-                    </th>
-                      <th>
+                      <th style="width: 9%; padding-right: 25px">
+                        <div>
+                          <span>ID товара</span>
+                        </div>
+                        <div class="table_array">
+                          <img src="./images/array-drop-top.svg" alt="Сортировка" class="table_array_top">
+                          <img src="./images/array-drop-down.svg" alt="Сортировка" class="table_array_bottom">
+                        </div>
+                      </th>
+                      <th style="padding-right: 25px">
+                        <div>
+                          <span>Артикул</span>
+                        </div>
+                        <div class="table_array">
+                          <img src="./images/array-drop-top.svg" alt="Сортировка" class="table_array_top">
+                          <img src="./images/array-drop-down.svg" alt="Сортировка" class="table_array_bottom">
+                        </div>
+                      </th>
+                      <th style="padding-right: 25px">
+                        <div>
+                          <span>Группа товаров</span>
+                        </div>
+                        <div class="table_array">
+                          <img src="./images/array-drop-top.svg" alt="Сортировка" class="table_array_top">
+                          <img src="./images/array-drop-down.svg" alt="Сортировка" class="table_array_bottom">
+                        </div>
+                      </th>
+                      <th style="padding-right: 25px">
+                        <div>
+                          <span>Наименование</span>
+                        </div>
+                        <div class="table_array">
+                          <img src="./images/array-drop-top.svg" alt="Сортировка" class="table_array_top">
+                          <img src="./images/array-drop-down.svg" alt="Сортировка" class="table_array_bottom">
+                        </div>
+                      </th>
+                      <th style="padding-right: 25px">
+                        <div>
+                          <span>Остаток на начало периода</span>
+                        </div>
+                        <div class="table_array">
+                          <img src="./images/array-drop-top.svg" alt="Сортировка" class="table_array_top">
+                          <img src="./images/array-drop-down.svg" alt="Сортировка" class="table_array_bottom">
+                        </div>
+                      </th>
+                      <th style="padding-right: 25px">
+                        <div>
+                          <span>Продано дистрибьюторам</span>
+                        </div>
+                        <div class="table_array">
+                          <img src="./images/array-drop-top.svg" alt="Сортировка" class="table_array_top">
+                          <img src="./images/array-drop-down.svg" alt="Сортировка" class="table_array_bottom">
+                        </div>
+                      </th>
+                      <th style="padding-right: 25px">
+                        <div>
+                          <span>Возвраты от дистрибьюторов</span>
+                        </div>
+                        <div class="table_array">
+                          <img src="./images/array-drop-top.svg" alt="Сортировка" class="table_array_top">
+                          <img src="./images/array-drop-down.svg" alt="Сортировка" class="table_array_bottom">
+                        </div>
+                      </th>
+                      <th style="padding-right: 25px">
+                        <div>
+                          <span>Отгружено нижестоящим</span>
+                        </div>
+                        <div class="table_array">
+                          <img src="./images/array-drop-top.svg" alt="Сортировка" class="table_array_top">
+                          <img src="./images/array-drop-down.svg" alt="Сортировка" class="table_array_bottom">
+                        </div>
+                      </th>
+                      <th style="padding-right: 25px">
+                        <div>
+                          <span>Оприходованно от вышестоящих</span>
+                        </div>
+                        <div class="table_array">
+                          <img src="./images/array-drop-top.svg" alt="Сортировка" class="table_array_top">
+                          <img src="./images/array-drop-down.svg" alt="Сортировка" class="table_array_bottom">
+                        </div>
+                      </th>
+                      <th style="padding-right: 25px">
+                        <div>
+                          <span>Пополнение</span>
+                        </div>
+                        <div class="table_array">
+                          <img src="./images/array-drop-top.svg" alt="Сортировка" class="table_array_top">
+                          <img src="./images/array-drop-down.svg" alt="Сортировка" class="table_array_bottom">
+                        </div>
+                      </th>
+                      <th style="padding-right: 25px">
                         <div>
                           <span>Списание</span>
                         </div>
@@ -225,7 +226,7 @@
                           <img src="./images/array-drop-down.svg" alt="Сортировка" class="table_array_bottom">
                         </div>
                       </th>
-                      <th>
+                      <th style="padding-right: 25px">
                         <div>
                           <span>Обороты</span>
                         </div>
@@ -234,7 +235,7 @@
                           <img src="./images/array-drop-down.svg" alt="Сортировка" class="table_array_bottom">
                         </div>
                       </th>
-                      <th>
+                      <th style="padding-right: 25px">
                         <div>
                           <span>Остаток (конец периода)</span>
                         </div>
@@ -243,7 +244,7 @@
                           <img src="./images/array-drop-down.svg" alt="Сортировка" class="table_array_bottom">
                         </div>
                       </th>
-                      <th>
+                      <th style="padding-right: 25px">
                         <div>
                           <span>Остаток (реальный)</span>
                         </div>
@@ -252,9 +253,9 @@
                           <img src="./images/array-drop-down.svg" alt="Сортировка" class="table_array_bottom">
                         </div>
                       </th>
-                  </tr>
-                  </thead>
-                  <tbody>
+                    </tr>
+                    </thead>
+                    <tbody>
                     <tr>
                       <td>2334</td>
                       <td>6000</td>
@@ -319,8 +320,9 @@
                       <td>12</td>
                       <td>12</td>
                     </tr>
-                  </tbody>
-                </table>
+                    </tbody>
+                  </table>
+                </div>
               </div>
             </div>
           </div>

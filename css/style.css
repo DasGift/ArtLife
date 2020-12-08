@@ -51,7 +51,7 @@ h1 {
 h3 {
   font-family: FuturaPT-Book;
   font-style: normal;
-  font-weight: 500;
+  font-weight: bold;
   font-size: 20px;
   line-height: 20px;
   color: #383A41;
@@ -60,7 +60,7 @@ h3 {
 
 h5 {
   font-style: normal;
-  font-weight: 500;
+  font-weight: bold;
   font-size: 12px;
   line-height: 12px;
   color: #383A41;
@@ -114,6 +114,7 @@ input[type=text] {
   text-transform: uppercase;
   color: #FFFFFF;
   padding-top: 9px;
+  cursor: pointer;
 }
 .header .acc_n_ico {
   float: left;
@@ -184,7 +185,7 @@ input[type=text] {
   float: left;
   margin-bottom: 5px;
   box-sizing: border-box;
-  padding: 15px 24px;
+  padding: 10px 24px;
 }
 .nav ul li a {
   display: block;
@@ -211,7 +212,7 @@ input[type=text] {
 .sub_menu {
   display: none;
   float: left;
-  padding-left: 40px;
+  padding-left: 15px;
 }
 .sub_menu li a {
   font-size: 14px;
@@ -439,7 +440,6 @@ input[type=text] {
   font-size: 16px;
   line-height: 16px;
   color: #32AAA7;
-  margin-right: 24px;
 }
 .footer_line a:hover {
   color: #9A9A9A;
@@ -586,8 +586,8 @@ input[type=text] {
 .middle_part table tr th {
   position: relative;
   border-bottom: 1px solid #BABABA;
-  background: #DEE2F3;
-  padding: 8px;
+  background: #E5E5E5;
+  padding: 8px 25px 8px 8px;
   font-family: FuturaPT-Demi;
   font-style: normal;
   font-weight: 500;
@@ -1158,4 +1158,116 @@ table.bordered tr td {
   border-bottom: 1px solid #32AAA7;
   outline: none;
   padding: 5px 0;
+}
+
+.line_param_checkbox {
+  display: none;
+}
+
+.line_param_checkbox + label {
+  font-family: FuturaPT-Book;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  color: #383A41;
+  align-items: center;
+  -webkit-user-select: none;
+          user-select: none;
+  margin-left: 5px;
+}
+
+.line_param_checkbox + label::before {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  left: 0;
+  top: 7px;
+  border: 2px solid #DEE2F3;
+  box-sizing: border-box;
+  border-radius: 2px;
+  margin-right: 0.5em;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 50% 50%;
+}
+
+.line_param_checkbox:checked + label::before {
+  border-color: #32AAA7;
+  background-color: #32AAA7;
+  background-image: url("../images/done.svg");
+  background-size: auto;
+}
+
+.check_block {
+  position: relative;
+  width: 15%;
+  float: left;
+  margin-left: 20px;
+}
+
+.modal_check_block {
+  position: relative;
+  width: 25%;
+  float: left;
+  margin-left: 20px;
+}
+.modal_check_block .line_param_checkbox + label {
+  margin-left: 20px;
+}
+.modal_check_block .line_param_checkbox + label::before {
+  top: 0;
+}
+
+.acc_nav {
+  z-index: 99999;
+}
+
+.acc_nav {
+  display: none;
+  position: absolute;
+  width: 370px;
+  top: 60px;
+  right: 0;
+  background: #FFFFFF;
+  box-shadow: 0 0 16px rgba(0, 0, 0, 0.16);
+  border-radius: 1px;
+}
+
+.acc_b.active .acc_nav {
+  display: block;
+}
+
+.acc_nav ul li {
+  width: 100%;
+  padding: 15px;
+  box-sizing: border-box;
+  border-bottom: 1px solid #DEE2F3;
+}
+
+.acc_nav ul li.logout {
+  background: #DEE2F3;
+}
+
+.acc_nav ul li a {
+  font-size: 16px;
+  line-height: 16px;
+  color: #383A41;
+}
+
+.acc_nav ul li a span {
+  display: block;
+  width: 100%;
+  font-size: 14px;
+  line-height: 16px;
+  color: #9A9A9A;
+  margin-bottom: 5px;
+}
+
+.acc_nav ul li.logout a {
+  display: block;
+  background: url(../images/exit.svg) no-repeat 100% center;
+  color: #9A9A9A;
 }

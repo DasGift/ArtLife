@@ -5,6 +5,10 @@ $(document).ready(function(){
         return false;
     });
 
+    $(document).on('click', '.acc_b', function(){
+        $(this).toggleClass('active');
+    });
+
     $(document).on('click', '.title_line', function(){
         $(this).next('.modal_line').addClass('active');
         $('body').addClass('hidden');
@@ -67,6 +71,7 @@ $(document).ready(function(){
     $('.mailslog').click(function(){
         $(this).addClass('active');
         $('.comment_block').css({'display': 'block'});
+        $('.footer').css({'display': 'block'});
     });
 });
 
