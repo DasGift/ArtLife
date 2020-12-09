@@ -344,8 +344,18 @@ input[type="text"] {
 }
 
 .line_param_input {
-  width: 100%;
   position: relative;
+  width: 100%;
+}
+
+.line_param_input_t {
+  width: 49%;
+  float: left;
+
+  &:nth-of-type(2) {
+    width: 49%;
+    margin: 2px 0 0 15px;
+  }
 }
 
 .for_adaptive {
@@ -561,6 +571,10 @@ input[type="text"] {
 
 .c_head {
   padding-left: 0;
+
+  &_a {
+    margin-bottom: 15px;
+  }
 
   a {
     display: none;
