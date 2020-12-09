@@ -327,6 +327,7 @@ input[type="text"] {
     width: 100%;
     float: left;
     margin-bottom: 30px;
+    font-weight: bold;
   }
 }
 
@@ -458,12 +459,13 @@ input[type="text"] {
     padding-top: 25px;
     padding-bottom: 25px;
 
-    a {
+    a.footer_line_link {
       font-style: normal;
       font-weight: 500;
       font-size: 16px;
       line-height: 16px;
       color: #32AAA7;
+      margin-right: 25px;
 
       &:hover {
         color: #9A9A9A;
@@ -494,7 +496,7 @@ input[type="text"] {
       cursor: pointer;
       font-family: FuturaPT-Book;
       font-style: normal;
-      font-weight: 500;
+      font-weight: bold;
       font-size: 16px;
       line-height: 16px;
       color: #383A41;
@@ -553,7 +555,7 @@ input[type="text"] {
   a.back {
     font-family: FuturaPT-Book;
     font-style: normal;
-    font-weight: 500;
+    font-weight: bold;
     font-size: 14px;
     line-height: 12px;
     text-transform: uppercase;
@@ -571,6 +573,10 @@ input[type="text"] {
   width: 100%;
   float: left;
   margin-bottom: 15px;
+
+  span {
+    font-weight: bold;
+  }
 
   ul li {
     float: left;
@@ -653,6 +659,10 @@ input[type="text"] {
       border-right: 1px solid #BABABA;
       width: 10%;
     }
+  }
+
+  table tr.head_t_th th {
+    background-color: #DEE2F3;
   }
 
   table tr td {
@@ -1106,8 +1116,8 @@ table.bordered tr td {
 }
 
 .brd_green.fill:hover {
-  background:#3D8987;
-  color:#fff;
+  background: #3D8987;
+  color: #fff;
 }
 
 .brd_green:hover {

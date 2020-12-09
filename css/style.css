@@ -307,6 +307,7 @@ input[type=text] {
   width: 100%;
   float: left;
   margin-bottom: 30px;
+  font-weight: bold;
 }
 
 .line_param_input {
@@ -434,14 +435,15 @@ input[type=text] {
   padding-top: 25px;
   padding-bottom: 25px;
 }
-.footer_line a {
+.footer_line a.footer_line_link {
   font-style: normal;
   font-weight: 500;
   font-size: 16px;
   line-height: 16px;
   color: #32AAA7;
+  margin-right: 25px;
 }
-.footer_line a:hover {
+.footer_line a.footer_line_link:hover {
   color: #9A9A9A;
 }
 .footer_line .modal_line {
@@ -464,7 +466,7 @@ input[type=text] {
   cursor: pointer;
   font-family: FuturaPT-Book;
   font-style: normal;
-  font-weight: 500;
+  font-weight: bold;
   font-size: 16px;
   line-height: 16px;
   color: #383A41;
@@ -516,7 +518,7 @@ input[type=text] {
 .c_head a.back {
   font-family: FuturaPT-Book;
   font-style: normal;
-  font-weight: 500;
+  font-weight: bold;
   font-size: 14px;
   line-height: 12px;
   text-transform: uppercase;
@@ -533,6 +535,9 @@ input[type=text] {
   width: 100%;
   float: left;
   margin-bottom: 15px;
+}
+.nav_top span {
+  font-weight: bold;
 }
 .nav_top ul li {
   float: left;
@@ -602,6 +607,9 @@ input[type=text] {
 .middle_part table tr th:nth-child(1) {
   border-right: 1px solid #BABABA;
   width: 10%;
+}
+.middle_part table tr.head_t_th th {
+  background-color: #DEE2F3;
 }
 .middle_part table tr td {
   padding: 8px;
