@@ -23,8 +23,28 @@
     top: 0;
   }
 
-  .label_in .array_down {
+  .label_in .array_down,
+.label_in .search {
     bottom: 17px;
+  }
+
+  .check_block {
+    width: 25%;
+    margin-top: 20px;
+  }
+
+  .title_total {
+    width: -webkit-max-content;
+    width: max-content;
+  }
+
+  .component_tags {
+    margin-bottom: 0;
+    margin-top: 15px;
+  }
+
+  .modal_line .nav_links {
+    width: 100%;
   }
 
   .mobilis {
@@ -249,9 +269,10 @@
     position: fixed;
     width: 100%;
     background: #fff;
-    padding: 20px 20px 20px 0;
+    padding: 20px;
     box-sizing: border-box;
     bottom: 0;
+    left: 0;
     height: auto;
     z-index: 999;
   }
@@ -559,6 +580,21 @@
     padding-right: 20px;
   }
 
+  .nav_links_t {
+    width: 94%;
+    padding-right: 0;
+  }
+
+  .modal_check_block {
+    width: 100% !important;
+    margin-left: 0;
+    margin-bottom: 20px;
+  }
+
+  .closebig {
+    right: 20px;
+  }
+
   .component_warning {
     float: left;
     width: 100%;
@@ -584,5 +620,9 @@
   .line_param_input_t:nth-of-type(2) {
     width: 100%;
     margin: 0;
+  }
+
+  .select_one {
+    margin-right: 20px;
   }
 }

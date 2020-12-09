@@ -1204,7 +1204,7 @@ table.bordered tr td {
   align-items: center;
   -webkit-user-select: none;
           user-select: none;
-  margin-left: 5px;
+  margin-left: 20px;
 }
 
 .line_param_checkbox + label::before {
