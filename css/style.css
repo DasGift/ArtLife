@@ -120,6 +120,9 @@ input[type=text] {
   float: left;
   margin-left: 15px;
 }
+.header .acc_b_menu {
+  display: none;
+}
 
 .left_menu {
   position: fixed;
@@ -310,9 +313,21 @@ input[type=text] {
   font-weight: bold;
 }
 
+.w50 {
+  display: block;
+  width: 49%;
+  float: left;
+  box-sizing: border-box;
+  margin-right: 0 !important;
+}
+
 .line_param_input {
   width: 100%;
   position: relative;
+}
+
+.for_adaptive {
+  display: none;
 }
 
 .pr_names {
@@ -1079,14 +1094,6 @@ table.bordered tr td {
   text-decoration: underline;
 }
 
-.w50 {
-  display: block;
-  width: 49%;
-  float: left;
-  box-sizing: border-box;
-  margin-right: 0 !important;
-}
-
 .w50.last {
   margin-left: 2%;
 }
@@ -1247,7 +1254,7 @@ table.bordered tr td {
   border-radius: 1px;
 }
 
-.acc_b.active .acc_nav {
+.acc_n.active .acc_nav {
   display: block;
 }
 

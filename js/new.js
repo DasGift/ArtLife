@@ -5,7 +5,7 @@ $(document).ready(function(){
         return false;
     });
 
-    $(document).on('click', '.acc_b', function(){
+    $(document).on('click', '.acc_n', function(){
         $(this).toggleClass('active');
     });
 

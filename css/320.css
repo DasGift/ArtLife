@@ -358,6 +358,10 @@
     padding-bottom: 30px !important;
   }
 
+  .component_body_open {
+    margin-bottom: 0;
+  }
+
   .brd_green {
     font-weight: 500;
     font-size: 14px;
@@ -369,6 +373,14 @@
     width: 100%;
     box-sizing: border-box;
     margin-bottom: 15px;
+  }
+
+  .for_adaptive {
+    display: block;
+  }
+
+  .without_adaptive {
+    display: none;
   }
 
   .component {
@@ -503,6 +515,34 @@
     margin-bottom: 15px;
     padding-right: 20px;
     box-sizing: border-box;
+  }
+
+  .header .acc_n_ico {
+    margin-left: 0;
+  }
+
+  .header .acc_b_menu {
+    display: block;
+    position: absolute;
+    right: 20px;
+    top: 10px;
+    float: right;
+  }
+
+  .header .acc_b {
+    position: relative;
+    width: 100%;
+    margin-right: 0;
+    float: left;
+  }
+
+  .header .acc_n {
+    float: left;
+    margin-left: 20px;
+  }
+  .header .acc_n_text {
+    float: right;
+    margin-left: 15px;
   }
 
   .nav_links {
