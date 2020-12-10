@@ -625,4 +625,35 @@
   .select_one {
     margin-right: 20px;
   }
+
+  .modal_send {
+    position: fixed;
+    padding: 20px;
+    font-family: FuturaPT-Book;
+    bottom: 0;
+  }
+  .modal_send h2 {
+    font-size: 20px;
+  }
+  .modal_send .closebig {
+    display: none;
+  }
+  .modal_send .l_p,
+.modal_send .r_p {
+    display: none;
+  }
+  .modal_send .l_p_adaptive {
+    display: block;
+  }
+
+  .overlay {
+    display: none;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: rgba(56, 58, 65, 0.8);
+    z-index: 1;
+  }
 }

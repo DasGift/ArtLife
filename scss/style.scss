@@ -209,12 +209,24 @@ input[type="text"] {
           color:#383A41;
         }
 
-        .sub_menu {
-          display: block;
-        }
+        //.sub_menu {
+        //  display: block;
+        //}
       }
     }
   }
+}
+
+.left_menu:hover .nav ul li a.active + .sub_menu {
+  display:block
+}
+
+.l_p_adaptive {
+  display: none;
+}
+
+.overlay {
+  display: none;
 }
 
 .sub_menu {

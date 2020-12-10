@@ -1,7 +1,6 @@
 $(document).ready(function(){
     $('.nav_parent').click( function(){
-        $('.nav_parent').removeClass('active');
-        $(this).addClass('active');
+        $(this).toggleClass('active');
         return false;
     });
 
@@ -17,6 +16,14 @@ $(document).ready(function(){
         $('.modal_line').removeClass('active');
         $('body').removeClass('hidden');
         return false;
+    });
+
+    $('.footer_line a').click(function(){
+        $('.modal_send').addClass('modal_send_active');
+
+        if ($('.modal_send').hasClass('modal_send_active')) {
+            $('.overlay').css({'display': 'block'})
+        }
     });
 
     $('.line_param_input .calendar').click(function(){

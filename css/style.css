@@ -208,8 +208,17 @@ input[type=text] {
   background: #EBEEFA;
   color: #383A41;
 }
-.nav ul li:hover .sub_menu {
+
+.left_menu:hover .nav ul li a.active + .sub_menu {
   display: block;
+}
+
+.l_p_adaptive {
+  display: none;
+}
+
+.overlay {
+  display: none;
 }
 
 .sub_menu {
