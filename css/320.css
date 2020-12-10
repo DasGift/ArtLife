@@ -33,14 +33,11 @@
     margin-top: 20px;
   }
 
-  .title_total {
-    width: -webkit-max-content;
-    width: max-content;
-  }
-
   .component_tags {
+    margin: 0 0 25px 0;
+  }
+  .component_tags_adaptive {
     margin-bottom: 0;
-    margin-top: 15px;
   }
 
   .modal_line .nav_links {
@@ -362,6 +359,9 @@
   .c_head_a {
     margin-bottom: 35px;
   }
+  .c_head_adaptive {
+    margin-bottom: 0;
+  }
 
   .c_head a {
     display: block;
@@ -372,7 +372,7 @@
 
   .component_head {
     width: 100%;
-    margin-bottom: 30px;
+    margin-bottom: 10px;
     font-style: normal;
     font-weight: normal;
     font-size: 24px;
@@ -422,6 +422,9 @@
     width: 100%;
     padding-bottom: 120px;
   }
+  .component_adaptive {
+    padding-top: 0;
+  }
 
   .middle_part {
     float: left;
@@ -437,6 +440,9 @@
 
   .component_head_sort {
     width: 100%;
+  }
+  .component_head_sort_adaptive {
+    margin-bottom: 15px;
   }
 
   .f_part {
@@ -536,6 +542,9 @@
     width: 100%;
     margin-bottom: 0;
   }
+  .sortblock_param_adaptive {
+    margin: 25px 0;
+  }
 
   .nav_top {
     width: 100%;
@@ -543,6 +552,10 @@
     margin: 15px 0;
     padding-right: 20px;
     box-sizing: border-box;
+  }
+  .nav_top_adaptive li {
+    clear: both;
+    margin: 5px 0;
   }
 
   .header .acc_n_ico {
@@ -619,11 +632,11 @@
   }
   .line_param_input_t:nth-of-type(2) {
     width: 100%;
-    margin: 0;
+    margin: 0 0 10px 0;
   }
 
   .select_one {
-    margin-right: 20px;
+    margin-right: 15px;
   }
 
   .modal_send {
@@ -655,5 +668,13 @@
     left: 0;
     background: rgba(56, 58, 65, 0.8);
     z-index: 1;
+  }
+
+  .month_select {
+    margin: 15px 0;
+  }
+
+  .title_adaptive {
+    margin-top: 20px;
   }
 }
