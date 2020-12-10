@@ -1310,3 +1310,119 @@ table.bordered tr td {
   background: url(../images/exit.svg) no-repeat 100% center;
   color: #9A9A9A;
 }
+
+.component_head_cart {
+  width: 100%;
+  padding: 24px 16px;
+  background: #F3F6FF;
+  border-radius: 1px;
+}
+.component_head_cart_l, .component_head_cart_r {
+  display: inline-block;
+  position: relative;
+}
+.component_head_cart_l span, .component_head_cart_r span {
+  position: absolute;
+  bottom: 0;
+}
+.component_head_cart_l {
+  width: 65%;
+}
+.component_head_cart_l .cart_line_param {
+  display: inline-block;
+  width: 17%;
+  height: 85px;
+  padding-right: 40px;
+  vertical-align: text-top;
+}
+.component_head_cart_l .cart_line_param:last-child {
+  border-right: 2px solid #C4C4C4;
+}
+.component_head_cart_r {
+  width: 34%;
+}
+.component_head_cart_r .cart_line_param {
+  display: inline-block;
+  width: 30%;
+  height: 85px;
+  vertical-align: text-top;
+}
+
+.cart_line_param {
+  display: inline-block;
+  width: 20%;
+}
+
+.line_param_cart {
+  width: 100%;
+  position: relative;
+  padding: 20px 16px;
+  border-bottom: 1px solid #BABABA;
+  border-left: 1px solid #BABABA;
+  border-right: 1px solid #BABABA;
+  box-sizing: border-box;
+  border-radius: 1px;
+}
+
+.l_p_cart,
+.c_p_cart {
+  display: inline-block;
+  width: 44%;
+}
+
+.r_p_cart {
+  display: inline-block;
+  width: 10%;
+  float: right;
+}
+.r_p_cart .cart_link {
+  float: right;
+}
+
+.input_edit {
+  width: 100%;
+  background: #F3F6FF;
+}
+
+.line_param_cart-edit {
+  position: relative;
+  background: #F3F6FF;
+  border: 1px solid #BABABA;
+  box-sizing: border-box;
+  border-radius: 1px;
+}
+.line_param_cart-edit .r_p_cart {
+  position: absolute;
+  top: 35px;
+  right: 18px;
+}
+.line_param_cart-edit .r_p_cart a {
+  float: right;
+}
+
+.cart_link {
+  font-family: FuturaPT-Book;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 16px;
+  border-bottom: 1px dashed #32AAA7;
+  color: #32AAA7;
+}
+
+.cart_sub_title {
+  margin: 42px 0;
+}
+
+.cart_line_param_clear {
+  position: absolute;
+  width: 24px;
+  height: 24px;
+  background: url(../images/clear.svg) no-repeat center;
+  right: -5px;
+  top: 2px;
+}
+
+.cart_rp_title {
+  margin-bottom: 36px;
+}
