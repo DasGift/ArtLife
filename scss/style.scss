@@ -198,7 +198,6 @@ input[type="text"] {
         line-height: 16px;
         text-transform: uppercase;
         color: #9A9A9A;
-        font-family: FTN65;
       }
 
       &:hover {
@@ -382,15 +381,18 @@ input[type="text"] {
 .tags {
   position: relative;
   float: left;
-  font-size: 10px;
-  line-height: 12px;
-  color: #383A41;
-  font-family: FTN65;
   padding: 6px 26px 6px 9px;
   border: 1px solid #C4C4C4;
   box-sizing: border-box;
   border-radius: 4px;
   margin-right: 8px;
+  font-style: normal;
+  font-weight: 500;
+  font-family: FuturaPT-Demi;
+  font-size: 10px;
+  line-height: 12px;
+  text-align: center;
+  color: #383A41;
 }
 .closes {
   position: absolute;
@@ -652,7 +654,6 @@ input[type="text"] {
   table tr {
     color: #000;
     border-bottom: 1px solid #9A9A9A;
-    font-family: FTN65;
   }
 
   table tr.start_info td:nth-child(1) {
@@ -765,7 +766,6 @@ table.bordered tr td {
   float: left;
   font-size: 20px;
   margin-right: 5px;
-  font-family: FTN65;
 }
 
 .lt2 {
@@ -773,7 +773,6 @@ table.bordered tr td {
   float: left;
   font-size: 10px;
   margin-right: 8px;
-  font-family: FTN65;
 }
 
 .lt3 {
@@ -813,7 +812,6 @@ table.bordered tr td {
     text-transform: uppercase;
     color: #383A41;
     margin-bottom: 10px;
-    font-family: FTN65;
   }
 
   &_param {
@@ -1139,7 +1137,6 @@ table.bordered tr td {
   margin-top: 10px;
   margin-right: 16px;
   padding: 8px 50px;
-  font-family: FTN65;
   border: 1px solid #32AAA7;
 }
 
@@ -1223,15 +1220,14 @@ table.bordered tr td {
 
 .select {
   &_one {
-    float:left;
+    float: left;
     font-size: 12px;
     line-height: 16px;
     letter-spacing: 0.1em;
     text-transform: uppercase;
     color: #9A9A9A;
-    font-family: FTN65;
     margin-right: 80px;
-    cursor:pointer
+    cursor: pointer;
   }
 }
 
