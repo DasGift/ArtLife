@@ -1394,11 +1394,16 @@ table.bordered tr td {
 
   &_l, &_r {
     display: inline-block;
-    position: relative;
 
     span {
       position: absolute;
       bottom: 0;
+      font-family: FuturaPT-Book;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 16px;
+      line-height: 24px;
+      color: #32AAA7;
     }
   }
 
@@ -1430,8 +1435,13 @@ table.bordered tr td {
   }
 }
 
+.nav_links_adaptive {
+  display: none;
+}
+
 .cart_line_param {
   display: inline-block;
+  position: relative;
   width: 20%;
 }
 

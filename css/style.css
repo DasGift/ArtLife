@@ -1319,11 +1319,16 @@ table.bordered tr td {
 }
 .component_head_cart_l, .component_head_cart_r {
   display: inline-block;
-  position: relative;
 }
 .component_head_cart_l span, .component_head_cart_r span {
   position: absolute;
   bottom: 0;
+  font-family: FuturaPT-Book;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
+  color: #32AAA7;
 }
 .component_head_cart_l {
   width: 65%;
@@ -1348,8 +1353,13 @@ table.bordered tr td {
   vertical-align: text-top;
 }
 
+.nav_links_adaptive {
+  display: none;
+}
+
 .cart_line_param {
   display: inline-block;
+  position: relative;
   width: 20%;
 }
 
