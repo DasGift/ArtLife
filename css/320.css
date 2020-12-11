@@ -603,6 +603,12 @@
     margin-left: 0;
     margin-bottom: 20px;
   }
+  .modal_check_block:last-child {
+    text-align: left !important;
+  }
+  .modal_check_block:last-child label {
+    margin-left: 20px !important;
+  }
 
   .closebig {
     right: 20px;

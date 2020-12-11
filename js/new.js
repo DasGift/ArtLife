@@ -38,6 +38,10 @@ $(document).ready(function(){
         $('.modal_line').css({'display': 'block'});
     });
 
+    $('.open_view').click(function(){
+        $('.modal_view').css({'display': 'block'});
+    });
+
     $('.add_partner').click(function(){
         $('.modal_partner').css({'display': 'block'});
     });
@@ -53,6 +57,7 @@ $(document).ready(function(){
     $('.closebig').click(function(){
         $('.modal_partner').css({'display': 'none'});
         $('.modal_send').css({'display': 'none'});
+        $('.modal_view').css({'display': 'none'});
     });
 
     $('a.more').click(function(){

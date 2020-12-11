@@ -394,6 +394,7 @@ input[type="text"] {
   text-align: center;
   color: #383A41;
 }
+
 .closes {
   position: absolute;
   display: block;
@@ -1197,7 +1198,8 @@ table.bordered tr td {
 }
 
 .modal_partner,
-.modal_send {
+.modal_send,
+.modal_view {
   display: none;
   position: absolute;
   width: 100%;

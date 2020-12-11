@@ -1125,7 +1125,8 @@ table.bordered tr td {
 }
 
 .modal_partner,
-.modal_send {
+.modal_send,
+.modal_view {
   display: none;
   position: absolute;
   width: 100%;
@@ -1137,7 +1138,8 @@ table.bordered tr td {
   z-index: 12;
 }
 .modal_partner .line_param_down,
-.modal_send .line_param_down {
+.modal_send .line_param_down,
+.modal_view .line_param_down {
   position: absolute;
   width: 24px;
   height: 24px;
