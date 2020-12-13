@@ -368,6 +368,9 @@ input[type=text] {
   text-align: center;
   color: #383A41;
 }
+.tags_title {
+  text-transform: uppercase;
+}
 
 .closes {
   position: absolute;
@@ -441,10 +444,24 @@ input[type=text] {
 
 .more,
 .open,
-.hidden {
+.hidden,
+.hidden_action {
   line-height: 16px;
   color: #32AAA7;
   border-bottom: 1px dotted;
+}
+
+.middle_part table a {
+  font-family: FuturaPT-Book;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 16px;
+  color: #32AAA7;
+}
+
+.hidden_action {
+  margin-right: 25px;
 }
 
 .hidden_component {
@@ -482,12 +499,6 @@ input[type=text] {
   color: #9A9A9A;
 }
 .footer_line .modal_line {
-  display: none;
-}
-.footer_line:hover .modal_line {
-  display: block;
-}
-.footer_line:hover .title_line {
   display: none;
 }
 .footer .title_line {
@@ -1126,12 +1137,14 @@ table.bordered tr td {
 
 .modal_partner,
 .modal_send,
-.modal_view {
+.modal_view,
+.modal_sale {
   display: none;
-  position: absolute;
+  position: fixed;
   width: 100%;
   background: #fff;
   left: 0;
+  bottom: 0;
   padding: 40px;
   box-sizing: border-box;
   box-shadow: 0 4px 12px 2px rgba(0, 0, 0, 0.24);
@@ -1139,7 +1152,8 @@ table.bordered tr td {
 }
 .modal_partner .line_param_down,
 .modal_send .line_param_down,
-.modal_view .line_param_down {
+.modal_view .line_param_down,
+.modal_sale .line_param_down {
   position: absolute;
   width: 24px;
   height: 24px;
@@ -1256,6 +1270,17 @@ table.bordered tr td {
 }
 .modal_check_block .line_param_checkbox + label::before {
   top: 0;
+}
+
+.line_param_checkbox + label.line_param_label_table::before {
+  top: -7px;
+}
+
+.line_param_checkbox:checked + label.line_param_label_table_top::before {
+  border-color: #FFFFFF;
+  background-color: #FFFFFF;
+  background-image: url("../images/done_green.svg");
+  background-size: auto;
 }
 
 .acc_nav {
@@ -1433,4 +1458,45 @@ table.bordered tr td {
 
 .cart_rp_title {
   margin-bottom: 36px;
+}
+
+.tabs_block {
+  border-bottom: 1px solid #C4C4C4;
+}
+.tabs_block_text {
+  display: inline-block;
+  margin-right: 5%;
+  padding-bottom: 12px;
+  font-family: FuturaPT-Book;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 12px;
+  text-transform: uppercase;
+  color: #9A9A9A;
+}
+.tabs_block_text.active {
+  border-bottom: 2px solid #32AAA7;
+  font-weight: bold;
+}
+
+.table_input {
+  background: #F3F6FF;
+  border: 1px solid #BABABA;
+  box-sizing: border-box;
+  border-radius: 1px;
+}
+
+.input_edit_title {
+  font-family: FuturaPT-Book;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 12px;
+  color: #9A9A9A;
+}
+
+.table_link_block {
+  float: right;
+  margin-top: 15px;
 }

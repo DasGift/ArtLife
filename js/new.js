@@ -46,18 +46,30 @@ $(document).ready(function(){
         $('.modal_partner').css({'display': 'block'});
     });
 
+    $('.add_sale').click(function(){
+        $('.modal_sale').css({'display': 'block'});
+    });
+
     $('.send_points').click(function(){
         $('.modal_send').css({'display': 'block'});
     });
 
     $('.modal_line .closebig').click(function(){
         $('.modal_line').css({'display': 'none'});
+        $('.footer_line').css({'display': 'block'});
+        $('.title_line').css({'display': 'block'});
+    });
+
+    $('.title_line').click(function(){
+        $('.modal_line').css({'display': 'block'});
+        $(this).css({'display': 'none'});
     });
 
     $('.closebig').click(function(){
         $('.modal_partner').css({'display': 'none'});
         $('.modal_send').css({'display': 'none'});
         $('.modal_view').css({'display': 'none'});
+        $('.modal_sale').css({'display': 'none'});
     });
 
     $('a.more').click(function(){
