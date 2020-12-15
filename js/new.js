@@ -4,6 +4,20 @@ $(document).ready(function(){
         return false;
     });
 
+    $('.acc_b_menu').click( function(){
+        $('.nav_parent').addClass('adaptive');
+        $('.left_menu').css({'display': 'block'})
+        $('.overlay').css({'display': 'block'})
+        return false;
+    });
+
+    $('.overlay').click( function(){
+        $('.nav_parent').removeClass('adaptive');
+        $('.left_menu').css({'display': 'none'})
+        $('.overlay').css({'display': 'none'})
+        return false;
+    });
+
     $(document).on('click', '.acc_n', function(){
         $(this).toggleClass('active');
     });
