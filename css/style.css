@@ -850,10 +850,13 @@ table.bordered tr td {
 
 .tlabel {
   position: absolute;
+  top: 36px;
+  /* left: 37px; */
   transition: 0.15s ease-in-out;
   color: #a0a0a6;
   pointer-events: none;
   left: 0;
+  text-transform: uppercase;
   font-family: FuturaPT-Book;
 }
 
@@ -875,7 +878,7 @@ table.bordered tr td {
 }
 .tinput:focus ~ label {
   font-size: 9px;
-  top: 25px;
+  top: 15px;
 }
 
 .month_select {
