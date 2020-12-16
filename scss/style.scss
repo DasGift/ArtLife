@@ -1,5 +1,6 @@
 @import "reset";
 
+//Шрифты
 @font-face {
   font-family: 'FuturaPT-Book';
   src: url('../fonts/FuturaPT-Book.ttf');
@@ -15,6 +16,8 @@
   font-weight: normal;
   font-style: normal;
 }
+
+//Основные стили
 
 body {
   font-family: 'FTN45', sans-serif;
@@ -76,6 +79,8 @@ input[type="text"] {
   box-sizing: border-box;
 }
 
+//Header
+
 .header {
   width: 100%;
   height: 56px;
@@ -112,6 +117,8 @@ input[type="text"] {
     display: none;
   }
 }
+
+//Левое меню
 
 .left_menu {
   position: fixed;
@@ -228,6 +235,8 @@ input[type="text"] {
   display: none;
 }
 
+//Подменю
+
 .sub_menu {
   display: none;
   float: left;
@@ -259,6 +268,7 @@ input[type="text"] {
   }
 }
 
+//Основная часть
 .content {
   width: 100%;
   max-width: 1920px;
@@ -378,6 +388,8 @@ input[type="text"] {
   margin-right:30px;
 }
 
+//Теги
+
 .tags {
   position: relative;
   float: left;
@@ -399,6 +411,8 @@ input[type="text"] {
   }
 }
 
+//Кнопка закрытия
+
 .closes {
   position: absolute;
   display: block;
@@ -419,6 +433,8 @@ input[type="text"] {
   margin-right: 15px;
 }
 
+//Блоки
+
 .l_p {
   width: 50%;
   float: left;
@@ -432,6 +448,8 @@ input[type="text"] {
   padding-right: 5%;
   box-sizing: border-box;
 }
+
+//Блоки для инпутов
 
 .line_param {
   position: relative;
@@ -473,6 +491,8 @@ input[type="text"] {
   }
 }
 
+//Ссылки
+
 .more,
 .open,
 .hidden,
@@ -502,6 +522,8 @@ input[type="text"] {
 .hidden_component.active {
   display: block;
 }
+
+//Footer
 
 .footer {
   position: fixed;
@@ -593,6 +615,7 @@ input[type="text"] {
   }
 }
 
+//Модалка в футере
 .modal_line {
   position: relative;
   width: 100%;
@@ -632,6 +655,7 @@ input[type="text"] {
   float: left;
 }
 
+//Блок под ссылки и сами ссылки
 .nav_top {
   width: 100%;
   float: left;
@@ -660,6 +684,8 @@ input[type="text"] {
     }
   }
 }
+
+//Стили для таблицы
 
 .middle_part {
   width: 100%;
@@ -840,6 +866,8 @@ table.bordered tr td {
   }
 }
 
+//Радиобаттоны, чекбоксы
+
 .radio {
   float: left;
   margin-right: 20px;
@@ -897,6 +925,8 @@ table.bordered tr td {
 .custom-radio:disabled + label::before {
   background-color: #e9ecef;
 }
+
+//Еще для инпутов
 
 .label_in {
   position: relative;
@@ -960,6 +990,8 @@ table.bordered tr td {
     top: 15px;
   }
 }
+
+//Календарь
 
 .month_select {
   width: 100%;
@@ -1149,6 +1181,8 @@ table.bordered tr td {
   margin-top: 30px;
 }
 
+//Кнопки
+
 .brd_green {
   font-weight: 500;
   font-size: 14px;
@@ -1217,6 +1251,8 @@ table.bordered tr td {
 .returns .modal_line .f_part {
   padding-bottom: 0;
 }
+
+//Модалки
 
 .modal_partner,
 .modal_send,
@@ -1295,6 +1331,8 @@ table.bordered tr td {
   padding: 5px 0;
 }
 
+//Чекбоксы
+
 .line_param_checkbox {
   display: none;
 }
@@ -1367,6 +1405,9 @@ table.bordered tr td {
   background-image: url("../images/done_green.svg");
   background-size: auto;
 }
+
+
+//Аккаунт
 
 .acc_nav {
   z-index: 99999;
@@ -1466,6 +1507,8 @@ table.bordered tr td {
     }
   }
 }
+
+//Стили для адаптива
 
 .nav_links_adaptive {
   display: none;
@@ -1596,6 +1639,8 @@ table.bordered tr td {
   float: right;
   margin-top: 15px;
 }
+
+//Скролл
 
 ::-webkit-scrollbar {
   width: 1px;

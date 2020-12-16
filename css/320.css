@@ -87,6 +87,10 @@
     text-align: left;
   }
 
+  .left_menu:hover {
+    width: 60%;
+  }
+
   .footer {
     padding-left: 20px;
   }
