@@ -1,4 +1,8 @@
 @media only screen and (min-width: 320px) and (max-width: 800px) {
+  .acc_nav {
+    left: 10px;
+  }
+
   .tlabel {
     position: absolute;
     top: 25px !important;
