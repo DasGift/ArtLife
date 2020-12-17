@@ -52,100 +52,13 @@
     width: 100%;
   }
 
-  // .mobilis {
-  //   display: block;
-  //   width: 100% !important;
-  //   float: left !important;
-  //   text-align: left;
-  //   margin-bottom:25px
-  // }
-
-  // .mobilis span {
-  //   font-style: normal;
-  //   font-weight: 700;
-  //   font-size: 24px;
-  //   line-height: 24px;
-  //   color: #383A41;
-  // }
-
-  // .nav ul li .sub_menu li {
-  //   float: left;
-  //   padding: 0;
-  //   margin-bottom: 12px;
-  //   width: 100%;
-  //   text-align: left;
-  // }
-
-  // .nav_parent.active .ico_t {
-  //   display: block;
-  //   color: #383A41;
-  //   text-transform: none;
-  //   font-size: 12px;
-  //   margin: 0;
-  //   width: 100%;
-  //   position: absolute;
-  //   left: 0;
-  //   bottom: -14px;
-  // }
-
-  // .nav_parent.active img {
-  //   opacity:1
-  // }
-
-  // .nav_parent.active + .sub_menu {
-  //   float: left;
-  //   //padding-left: 40px;
-  //   display: block;
-  //   position: fixed;
-  //   top: auto;
-  //   width: 100%;
-  //   background: #fff;
-  //   height: 100%;
-  //   z-index: 10;
-  //   left: 0;
-  //   box-sizing: border-box;
-  //   bottom: 60px;
-  //   //padding-top: 80px;
-  // }
-
-  // .nav_parent.active .ico {
-  //   display: block;
-  //   float: left;
-  //   margin-top: -5px;
-  //   margin-bottom: 5px;
-  // }
-
-  // .nav ul li .sub_menu li a {
-  //   padding: 16px 12px;
-  //   background: #EBEEFA !important;
-  //   display: block;
-  //   float: left;
-  //   width: 100%;
-  //   box-sizing: border-box;
-  //   font-style: normal;
-  //   font-weight: 500;
-  //   font-size: 14px;
-  //   line-height: 16px;
-  //   color: #32AAA7;
-  // }
-
   .left_menu_top {
     display: block;
   }
 
   .left_menu {
     display: none;
-    width: 60%;
-    // left: 0;
-    // top: auto;
-    // width: 100%;
-    // height: 60px;
-    // background: #FCFCFC;
-    // box-shadow: none;
-    // padding: 0;
-    // box-sizing: border-box;
-    // border-top: 1px solid #DEE2F3;
-    // bottom: 0;
+    width: 70%;
 
     .nav {
       text-align: left;
@@ -425,8 +338,7 @@
     position: fixed;
     left: 0;
     width: 100%;
-    //padding: 20px;
-    //padding-bottom: 20px;
+    padding: 20px;
     box-sizing: border-box;
     background: #FFFFFF;
     box-shadow: none;
@@ -434,7 +346,6 @@
     z-index: 99999;
     height: 100%;
     overflow: scroll;
-    //padding-bottom: 120px;
   }
 
   .modal_calend_inner {
