@@ -506,6 +506,9 @@ input[type=text] {
 .footer_line .modal_line {
   display: none;
 }
+.footer_line_adaptive {
+  text-align: center;
+}
 .footer .title_line {
   width: 100%;
   text-align: center;

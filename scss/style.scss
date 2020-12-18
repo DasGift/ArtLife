@@ -562,13 +562,9 @@ input[type="text"] {
       display: none;
     }
 
-    //&:hover .modal_line {
-    //  display: block;
-    //}
-    //
-    //&:hover .title_line {
-    //  display: none;
-    //}
+    &_adaptive {
+      text-align: center;
+    }
   }
 
   .title_line {
