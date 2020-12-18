@@ -1,6 +1,7 @@
 $(document).ready(function(){
     $('.nav_parent').click( function(){
-        $(this).toggleClass('active');
+        $('.nav_parent').removeClass('active');
+        $(this).addClass('active');
         return false;
     });
 
