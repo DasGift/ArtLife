@@ -19,7 +19,7 @@ $(document).ready(function(){
         return false;
     });
 
-    $('.add_sklad_adaptive').click( function(){
+    $('.add_partner_adaptive').click( function(){
         $('body').addClass('noscroll')
         $('.overlay').css({'display': 'block'})
         return false;
@@ -87,6 +87,7 @@ $(document).ready(function(){
 
     $('.close_modal').click(function(){
         $('.modal_sale').css({'display': 'none'});
+        $('body').removeClass('noscroll');
     });
 
     $('.send_points').click(function(){
@@ -115,6 +116,7 @@ $(document).ready(function(){
         $('.modal_sale').css({'display': 'none'});
         $('.modal_sklad').css({'display': 'none'});
         $('.overlay').css({'display': 'none'})
+        $('body').removeClass('noscroll')
     });
 
     $('a.more').click(function(){

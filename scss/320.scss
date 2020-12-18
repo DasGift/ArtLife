@@ -1,7 +1,7 @@
 @media only screen and (min-width:320px) and (max-width:800px) {
 
   .modal_sklad {
-    display: block;
+    display: none;
     width: 100%;
     left: 0;
     top: 56px;
@@ -551,12 +551,13 @@
     }
   }
 
-  .modal_view {
+  .modal_view,
+  .modal_partner {
     position: fixed;
     width: 100%;
     padding: 20px;
     font-family: FuturaPT-Book;
-    bottom: 0;
+    top: 54px;
     left: 0;
   }
 
@@ -608,7 +609,7 @@
     .r_p_cart {
       position: absolute;
       bottom: 15px;
-      left: 45px;
+      left: 30px;
       right: 0;
       top: auto;
     }
