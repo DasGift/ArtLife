@@ -139,7 +139,7 @@ input[type=text] {
   box-shadow: 0 0 16px 2px rgba(56, 58, 65, 0.24);
   padding: 0;
   box-sizing: border-box;
-  z-index: 11;
+  z-index: 15;
 }
 .left_menu:hover {
   width: 280px;
@@ -676,6 +676,10 @@ input[type=text] {
 .middle_part table tr td:nth-child(1) {
   border-right: 1px solid #BABABA;
 }
+.middle_part .head_t_top th {
+  background-color: #32AAA7;
+  color: #FFFFFF;
+}
 
 table.bordered tr th,
 table.bordered tr td {
@@ -861,7 +865,6 @@ table.bordered tr td {
   color: #a0a0a6;
   pointer-events: none;
   left: 0;
-  text-transform: uppercase;
   font-family: FuturaPT-Book;
 }
 
@@ -1144,15 +1147,41 @@ table.bordered tr td {
   padding-bottom: 0;
 }
 
+.label_in_three_column {
+  display: inline-block;
+  position: relative;
+  width: 33%;
+  margin-right: 2px;
+  box-sizing: border-box;
+}
+.label_in_three_column:last-child {
+  width: 33%;
+  margin-right: 0;
+}
+.label_in_three_column label {
+  top: 10px;
+  font-family: FuturaPT-Book;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 16px;
+  color: #9A9A9A;
+}
+.label_in_three_column .tinput:focus ~ label {
+  font-size: 9px;
+  top: -10px;
+}
+
 .modal_partner,
 .modal_send,
 .modal_view,
-.modal_sale {
+.modal_sale,
+.modal_sklad {
   display: none;
   position: fixed;
   width: 100%;
   background: #fff;
-  left: 0;
+  left: 80px;
   bottom: 0;
   padding: 40px;
   box-sizing: border-box;
@@ -1162,7 +1191,8 @@ table.bordered tr td {
 .modal_partner .line_param_down,
 .modal_send .line_param_down,
 .modal_view .line_param_down,
-.modal_sale .line_param_down {
+.modal_sale .line_param_down,
+.modal_sklad .line_param_down {
   position: absolute;
   width: 24px;
   height: 24px;
@@ -1508,22 +1538,4 @@ table.bordered tr td {
 .table_link_block {
   float: right;
   margin-top: 15px;
-}
-
-::-webkit-scrollbar {
-  width: 1px;
-  height: 1px;
-}
-
-::-webkit-scrollbar-track {
-  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
-  opacity: 0.64;
-  border-radius: 10px;
-}
-
-::-webkit-scrollbar-thumb {
-  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.5);
-  background: #383A41;
-  opacity: 0.64;
-  border-radius: 10px;
 }

@@ -62,6 +62,10 @@ $(document).ready(function(){
         $('.modal_partner').css({'display': 'block'});
     });
 
+    $('.add_sklad').click(function(){
+        $('.modal_sklad').css({'display': 'block'});
+    });
+
     $('.add_sale').click(function(){
         $('.modal_sale').css({'display': 'block'});
     });

@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <title>Главная</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.css" type="text/css" media="screen" />
+  <link rel="stylesheet" href="css/320.css" type="text/css" media="screen" />
+</head>
+<body>
+<div class="fullwidth returns">
+  <div class="wrapper">
+    <div class="full_content">
+      <div class="overlay"></div>
+      <div class="left_menu active">
+        <div class="left_menu_top">
+          <div class="logo">
+            <a href="#">
+              <img class="small_logo" src="images/logo.svg" alt="Артлайф" style="width: 52px" />
+              <img class="lhid" src="images/logo_1.png" alt="Артлайф"/>
+            </a>
+          </div>
+        </div>
+        <div class="nav active">
+          <ul>
+            <li>
+              <a href="#" class="nav_parent">
+                  <span class="ico">
+                    <img src="images/i1.png" alt=""/>
+                  </span>
+                <span class="ico_t">Склады</span>
+              </a>
+              <ul class="sub_menu">
+                <li><a href="#">Карточка склада</a></li>
+                <li><a href="#">Иерархия дочерних складов</a></li>
+                <li><a href="#">Создание пользователей склада</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="#" class="nav_parent">
+                  <span class="ico">
+                    <img src="images/i2.png" alt=""/>
+                  </span>
+                <span class="ico_t">Лицевые счета</span>
+              </a>
+              <ul class="sub_menu">
+                <li><a href="#">Детализация по лицевому счёту склада</a></li>
+                <li><a href="#">Детализация по лицевому счёту партнёра</a></li>
+                <li><a href="#">Движение Денежных Средств по складу</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="#" class="nav_parent">
+                  <span class="ico">
+                    <img src="images/i3.png" alt=""/>
+                  </span>
+                <span class="ico_t">Товары</span>
+              </a>
+              <ul class="sub_menu">
+                <li><a href="#">Все товарные документы</a></li>
+                <li><a href="#">Складские обороты</a></li>
+                <li><a href="#">Каталог/ складские остатки</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="#" class="nav_parent">
+                  <span class="ico">
+                    <img src="images/i4.png" alt=""/>
+                  </span>
+                <span class="ico_t">Партнеры</span>
+              </a>
+              <ul class="sub_menu">
+                <li><a href="#">Партнёры</a></li>
+                <li><a href="#">Регистрация партнёра</a></li>
+                <li><a href="#">Карточка партнёра</a></li>
+                <li><a href="#">История организации по периодам*</a></li>
+                <li><a href="#">История показателей партнёра по периодам *</a></li>
+                <li><a href="#">История бонусов (КЕ) *</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="#" class="nav_parent">
+                  <span class="ico">
+                    <img src="images/i5.png" alt=""/>
+                  </span>
+                <span class="ico_t">Приход</span>
+              </a>
+              <ul class="sub_menu">
+                <li><a href="#">Заказ/приёмка</a></li>
+                <li><a href="#">Пополнение</a></li>
+                <li><a href="#">Возврат</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="#" class="nav_parent">
+                  <span class="ico">
+                    <img src="images/i6.png" alt=""/>
+                  </span>
+                <span class="ico_t">Расход</span>
+              </a>
+              <ul class="sub_menu">
+                <li><a href="#">Отгрузка</a></li>
+                <li><a href="#">Списание</a></li>
+                <li><a href="#">Продажа</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="header">
+        <div class="acc_b">
+          <div class="acc_b_menu">
+            <img src="images/burger-menu.svg" alt="">
+          </div>
+          <div class="acc_n">
+            <div class="acc_n_text">Козлов В.И.</div>
+            <div class="acc_n_ico">
+              <img src="images/avatar.svg" alt=""/>
+            </div>
+            <div class="acc_nav">
+              <ul>
+                <li><a href="#">Козлов В.И.</a></li>
+                <li><a href="#"><span>Роль</span>Управляющий</a></li>
+                <li class="logout"><a href="#">Выйти</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="content">
+        <div class="c_head">
+          <h1>Иерархия дочерних складов</h1>
+        </div>
+        <div class="line_param_input">
+          <div class="l_p" style="margin-bottom: 30px">
+            <div class="nav_links" style="margin: 0">
+              <a class="brd_green fill w50 add_sklad" href="#">Создать новый склад</a>
+            </div>
+          </div>
+        </div>
+        <div class="component">
+          <div class="component_body">
+            <div class="f_part">
+              <div class="middle_part" style="overflow-x: scroll">
+                <table class="otch_p bordered">
+                  <thead>
+                    <tr >
+                      <th colspan="3">Склад</th>
+                      <th colspan="4">Складодержатель</th>
+                      <th colspan="4">Активы</th>
+                      <th colspan="2">Обязательства перед</th>
+                      <th colspan="2">Наценка</th>
+                    </tr>
+                    <tr class="head_t_top">
+                      <th style="padding: 8px 25px">Номер</th>
+                      <th>Название</th>
+                      <th>Адрес</th>
+                      <th>Номер</th>
+                      <th>Имя</th>
+                      <th>E-mail</th>
+                      <th>Телефон</th>
+                      <th>Лицевой счет</th>
+                      <th>Товары (по собственной складской цене)</th>
+                      <th>Товары (по отпускной цене дистрибьютора)</th>
+                      <th>Баллы</th>
+                      <th>Привязанными партнёрами</th>
+                      <th>Подскладами</th>
+                      <th>Складская</th>
+                      <th>Территории</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>
+                        <div class="lin_t_top">
+                          <span class="lt1">-</span>
+                          <span>3333333</span>
+                          <a href="#" class="lt3">Параметры</a>
+                        </div>
+                      </td>
+                      <td>Кемерово-Абрамово</td>
+                      <td>Кемерово-Абрамово</td>
+                      <td>3333333</td>
+                      <td>Абрамова И.Н.</td>
+                      <td>mail.914329@example.com</td>
+                      <td>+7 (912) 456-88-34</td>
+                      <td>
+                        <div class="lin_t_top">
+                          <a href="#" class="lt3">-1562.76</a>
+                        </div>
+                      </td>
+                      <td>49148.64</td>
+                      <td>59160.4</td>
+                      <td>854.2</td>
+                      <td>49148.64</td>
+                      <td>49148.64</td>
+                      <td>49148.64</td>
+                      <td>49148.64</td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <div class="lin_t_top">
+                          <span class="lt1">-</span>
+                          <span>3333333</span>
+                          <a href="#" class="lt3">Параметры</a>
+                        </div>
+                      </td>
+                      <td>Кемерово-Абрамово</td>
+                      <td>Кемерово-Абрамово</td>
+                      <td>3333333</td>
+                      <td>Абрамова И.Н.</td>
+                      <td>mail.914329@example.com</td>
+                      <td>+7 (912) 456-88-34</td>
+                      <td>
+                        <div class="lin_t_top">
+                          <a href="#" class="lt3">-1562.76</a>
+                        </div>
+                      </td>
+                      <td>49148.64</td>
+                      <td>59160.4</td>
+                      <td>854.2</td>
+                      <td>49148.64</td>
+                      <td>49148.64</td>
+                      <td>49148.64</td>
+                      <td>49148.64</td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <div class="lin_t_top">
+                          <span class="lt1">-</span>
+                          <span>3333333</span>
+                          <a href="#" class="lt3">Параметры</a>
+                        </div>
+                      </td>
+                      <td>Кемерово-Абрамово</td>
+                      <td>Кемерово-Абрамово</td>
+                      <td>3333333</td>
+                      <td>Абрамова И.Н.</td>
+                      <td>mail.914329@example.com</td>
+                      <td>+7 (912) 456-88-34</td>
+                      <td>
+                        <div class="lin_t_top">
+                          <a href="#" class="lt3">-1562.76</a>
+                        </div>
+                      </td>
+                      <td>49148.64</td>
+                      <td>59160.4</td>
+                      <td>854.2</td>
+                      <td>49148.64</td>
+                      <td>49148.64</td>
+                      <td>49148.64</td>
+                      <td>49148.64</td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <div class="lin_t_top">
+                          <span class="lt1">-</span>
+                          <span>3333333</span>
+                          <a href="#" class="lt3">Параметры</a>
+                        </div>
+                      </td>
+                      <td>Кемерово-Абрамово</td>
+                      <td>Кемерово-Абрамово</td>
+                      <td>3333333</td>
+                      <td>Абрамова И.Н.</td>
+                      <td>mail.914329@example.com</td>
+                      <td>+7 (912) 456-88-34</td>
+                      <td>
+                        <div class="lin_t_top">
+                          <a href="#" class="lt3">-1562.76</a>
+                        </div>
+                      </td>
+                      <td>49148.64</td>
+                      <td>59160.4</td>
+                      <td>854.2</td>
+                      <td>49148.64</td>
+                      <td>49148.64</td>
+                      <td>49148.64</td>
+                      <td>49148.64</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+          <div class="modal_sklad">
+            <a href="#" class="closebig"></a>
+            <h2>Создать дочерний склад</h2>
+            <div class="component_body">
+              <div class="line_param_input">
+                <div class="sortblock">
+                  <div class="sortblock_param">
+                    <h3 style="margin: 20px 0 0">Данные склада</h3>
+                    <h5 style="margin: 25px 0">Владелец склада</h5>
+                    <div class="radio">
+                      <input class="custom-radio" type="radio" id="param1" name="param" value="Полное дерево">
+                      <label for="param1">Выбрать из списка партнеров</label>
+                    </div>
+                    <div class="radio">
+                      <input class="custom-radio" type="radio" id="param2" name="param" value="Директорское">
+                      <label for="param2">Ввести номер</label>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="line_param_input">
+                <div class="l_p">
+                  <div class="label_in">
+                    <input type="text" class="tinput" />
+                    <label class="tlabel">Партнер</label>
+                    <a href="#" class="line_param_down"></a>
+                  </div>
+                </div>
+                <div class="r_p">
+                  <div class="label_in">
+                    <input type="text" class="tinput" />
+                    <label class="tlabel">Контактное лицо</label>
+                  </div>
+                </div>
+                <div style="padding-right: 5%">
+                  <div class="label_in_three_column">
+                    <input type="text" class="tinput"/>
+                    <label class="tlabel">Город</label>
+                  </div>
+                  <div class="label_in_three_column">
+                    <input type="text" class="tinput"/>
+                    <label class="tlabel">Наименование склада</label>
+                  </div>
+                  <div class="label_in_three_column">
+                    <input type="text" class="tinput"/>
+                    <label class="tlabel">Адрес склада</label>
+                  </div>
+                </div>
+                <div style="margin-top: 25px; padding-right: 5%">
+                  <div class="label_in_three_column">
+                    <input type="text" class="tinput"/>
+                    <label class="tlabel">E-mail</label>
+                  </div>
+                  <div class="label_in_three_column">
+                    <input type="text" class="tinput"/>
+                    <label class="tlabel">Телефон</label>
+                  </div>
+                  <div class="label_in_three_column">
+                    <input type="text" class="tinput"/>
+                    <label class="tlabel">Наценка/скидка</label>
+                  </div>
+                </div>
+              </div>
+              <div class="line_param_input">
+                <div class="label_in" style="padding-right: 5%">
+                  <input type="text" class="tinput" />
+                  <label class="tlabel">Доп контакты</label>
+                </div>
+              </div>
+            </div>
+            <div class="component_body">
+              <h3 style="margin: 20px 0 0">Данные пользователя</h3>
+              <div class="l_p">
+                <div class="line_param_input">
+                  <div class="label_in">
+                    <input type="text" class="tinput" />
+                    <label class="tlabel">Логин</label>
+                  </div>
+                </div>
+                <div class="line_param_input">
+                  <div class="label_in">
+                    <input type="text" class="tinput"/>
+                    <label class="tlabel">Телефон</label>
+                  </div>
+                </div>
+              </div>
+              <div class="r_p">
+                <div class="line_param_input">
+                  <div class="label_in">
+                    <input type="text" class="tinput"/>
+                    <label class="tlabel">Имя</label>
+                  </div>
+                  <div class="label_in">
+                    <input type="text" class="tinput"/>
+                    <label class="tlabel">E-mail</label>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="component_body">
+              <div class="r_p" style="margin: 0; float: right">
+                <div class="nav_links" style="margin: 0; float: right">
+                  <a class="brd_green fill w50" href="#" style="width: 100%">Создать</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.8/jquery.min.js"></script>
+<script type="text/javascript" src="js/jquery.maskedinput.min.js"></script>
+<script type="text/javascript" src="js/new.js"></script>
+
+</body>
+</html>
+
