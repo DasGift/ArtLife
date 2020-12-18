@@ -9,6 +9,24 @@ $(document).ready(function(){
         $('.nav_parent').addClass('adaptive');
         $('body').addClass('noscroll')
         $('.left_menu').css({'display': 'block'})
+        $('.overlay').css({'display': 'block', 'z-index': '12'})
+        return false;
+    });
+
+    $('.add_sklad_adaptive').click( function(){
+        $('body').addClass('noscroll')
+        $('.overlay').css({'display': 'block'})
+        return false;
+    });
+
+    $('.add_sklad_adaptive').click( function(){
+        $('body').addClass('noscroll')
+        $('.overlay').css({'display': 'block'})
+        return false;
+    });
+
+    $('.modal_view_adaptive').click( function(){
+        $('body').addClass('noscroll')
         $('.overlay').css({'display': 'block'})
         return false;
     });
@@ -16,7 +34,7 @@ $(document).ready(function(){
     $('.overlay').click( function(){
         $('.nav_parent').removeClass('adaptive');
         $('.left_menu').css({'display': 'none'})
-        $('.overlay').css({'display': 'none'})
+        $('.overlay').css({'display': 'none', 'z-index': '10'})
         return false;
     });
 
@@ -86,12 +104,17 @@ $(document).ready(function(){
         $(this).css({'display': 'none'});
     });
 
+    $('.title_line_adaptive').click(function(){
+        $('.overlay').css({'display': 'block', 'z-index': '10'})
+    });
+
     $('.closebig').click(function(){
         $('.modal_partner').css({'display': 'none'});
         $('.modal_send').css({'display': 'none'});
         $('.modal_view').css({'display': 'none'});
         $('.modal_sale').css({'display': 'none'});
         $('.modal_sklad').css({'display': 'none'});
+        $('.overlay').css({'display': 'none'})
     });
 
     $('a.more').click(function(){

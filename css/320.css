@@ -1,4 +1,11 @@
 @media only screen and (min-width: 320px) and (max-width: 800px) {
+  .modal_sklad {
+    display: block;
+    width: 100%;
+    left: 0;
+    top: 56px;
+  }
+
   .acc_nav {
     left: 10px;
   }
@@ -10,16 +17,10 @@
     transition: 0.15s ease-in-out;
     color: #a0a0a6;
     pointer-events: none;
-    text-transform: uppercase;
     font-size: 14px;
   }
 
   .tinput:focus ~ label {
-    font-size: 14px;
-    top: 25px !important;
-  }
-
-  .tinput:valid ~ label {
     font-size: 14px;
     top: 25px !important;
   }
@@ -499,15 +500,14 @@
 
   .modal_send {
     position: fixed;
+    width: 100%;
     padding: 20px;
     font-family: FuturaPT-Book;
     bottom: 0;
+    left: 0;
   }
   .modal_send h2 {
     font-size: 20px;
-  }
-  .modal_send .closebig {
-    display: none;
   }
   .modal_send .l_p,
 .modal_send .r_p {
@@ -515,6 +515,19 @@
   }
   .modal_send .l_p_adaptive {
     display: block;
+  }
+
+  .modal_view {
+    position: fixed;
+    width: 100%;
+    padding: 20px;
+    font-family: FuturaPT-Book;
+    bottom: 0;
+    left: 0;
+  }
+
+  .modal_line_catalog {
+    top: 20px;
   }
 
   .overlay {
@@ -609,5 +622,28 @@
   .noscroll {
     display: block;
     overflow: hidden;
+  }
+
+  .add_sklad_adaptive {
+    display: block;
+  }
+
+  .block_three_column {
+    margin-top: 0;
+    padding-right: 0;
+  }
+
+  .label_in_three_column,
+.label_in_three_column:last-child {
+    width: 100%;
+    padding: 10px 0;
+  }
+
+  .tlabel_adaptive {
+    top: 24px !important;
+  }
+
+  .block_nopadding {
+    padding-right: 0 !important;
   }
 }

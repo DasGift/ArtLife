@@ -84,6 +84,11 @@ input[type=text] {
   overflow: hidden;
 }
 
+.block_three_column {
+  margin-top: 25px;
+  padding-right: 5%;
+}
+
 .fullwidth {
   width: 100%;
   float: left;
@@ -165,6 +170,7 @@ input[type=text] {
   display: inline;
 }
 .left_menu_top {
+  position: relative;
   width: 100%;
   padding: 24px;
   box-sizing: border-box;
@@ -793,7 +799,7 @@ table.bordered tr td {
 
 .custom-radio {
   position: absolute;
-  z-index: -1;
+  z-index: 4;
   opacity: 0;
 }
 
