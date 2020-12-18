@@ -64,10 +64,11 @@ $(document).ready(function(){
 
     $('.add_sklad').click(function(){
         $('.modal_sklad').css({'display': 'block'});
+        $('body').addClass('noscroll')
     });
 
-    $('.add_sale').click(function(){
-        $('.modal_sale').css({'display': 'block'});
+    $('.close_modal').click(function(){
+        $('.modal_sale').css({'display': 'none'});
     });
 
     $('.send_points').click(function(){
@@ -90,6 +91,7 @@ $(document).ready(function(){
         $('.modal_send').css({'display': 'none'});
         $('.modal_view').css({'display': 'none'});
         $('.modal_sale').css({'display': 'none'});
+        $('.modal_sklad').css({'display': 'none'});
     });
 
     $('a.more').click(function(){

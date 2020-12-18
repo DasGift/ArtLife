@@ -80,8 +80,8 @@ input[type=text] {
 }
 
 .noscroll {
-  position: inherit;
-  overflow: auto;
+  display: block;
+  overflow: hidden;
 }
 
 .fullwidth {
@@ -1182,14 +1182,16 @@ table.bordered tr td {
 .modal_sklad {
   display: none;
   position: fixed;
-  width: 94%;
+  width: 93%;
+  height: 100%;
   background: #fff;
   left: 100px;
-  bottom: 0;
+  top: 20px;
   padding: 40px;
   box-sizing: border-box;
   box-shadow: 0 4px 12px 2px rgba(0, 0, 0, 0.24);
-  z-index: 12;
+  z-index: 15;
+  overflow-y: scroll;
 }
 .modal_partner .line_param_down,
 .modal_send .line_param_down,
