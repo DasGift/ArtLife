@@ -1179,9 +1179,9 @@ table.bordered tr td {
 .modal_sklad {
   display: none;
   position: fixed;
-  width: 100%;
+  width: 94%;
   background: #fff;
-  left: 80px;
+  left: 100px;
   bottom: 0;
   padding: 40px;
   box-sizing: border-box;
