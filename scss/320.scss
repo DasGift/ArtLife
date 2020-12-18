@@ -63,6 +63,7 @@
   .left_menu {
     display: none;
     width: 70%;
+    overflow: scroll;
 
     .nav {
       text-align: left;
@@ -628,6 +629,11 @@
 
   .footer_line a.footer_line_link {
     margin-right: 0;
+  }
+
+  .noscroll {
+    display: block;
+    overflow: hidden;
   }
 }
 

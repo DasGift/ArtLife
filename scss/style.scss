@@ -67,6 +67,11 @@ input[type="text"] {
   color: #9A9A9A;
 }
 
+.noscroll {
+  position: inherit;
+  overflow: auto;
+}
+
 .fullwidth  {
   width: 100%;
   float: left;
@@ -1405,7 +1410,6 @@ table.bordered tr td {
   background-image: url("../images/done_green.svg");
   background-size: auto;
 }
-
 
 //Аккаунт
 

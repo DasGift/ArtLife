@@ -7,6 +7,7 @@ $(document).ready(function(){
 
     $('.acc_b_menu').click( function(){
         $('.nav_parent').addClass('adaptive');
+        $('body').addClass('noscroll')
         $('.left_menu').css({'display': 'block'})
         $('.overlay').css({'display': 'block'})
         return false;
