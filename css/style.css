@@ -48,6 +48,16 @@ h1 {
   font-family: FuturaPT-Demi;
 }
 
+h2 {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 32px;
+  color: #383A41;
+  margin-bottom: 24px;
+  font-family: FuturaPT-Book;
+}
+
 h3 {
   font-family: FuturaPT-Book;
   font-style: normal;
@@ -627,6 +637,9 @@ input[type=text] {
   width: 100%;
   border: 1px solid #BABABA;
 }
+.middle_part table .table_returns th {
+  padding-bottom: 25px;
+}
 .middle_part table tr {
   color: #000;
   border-bottom: 1px solid #9A9A9A;
@@ -868,7 +881,7 @@ table.bordered tr td {
 
 .tlabel {
   position: absolute;
-  top: 36px;
+  top: 18px;
   /* left: 37px; */
   transition: 0.15s ease-in-out;
   color: #a0a0a6;
@@ -1168,7 +1181,7 @@ table.bordered tr td {
   margin-right: 0;
 }
 .label_in_three_column label {
-  top: 10px;
+  top: -5px;
   font-family: FuturaPT-Book;
   font-style: normal;
   font-weight: normal;
