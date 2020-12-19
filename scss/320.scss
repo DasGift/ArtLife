@@ -7,6 +7,10 @@
     top: 56px;
   }
 
+  .button_adaptive {
+    width: auto;
+  }
+
   .acc_nav {
     left: 10px;
   }
@@ -370,7 +374,7 @@
 
   .modal_calend_left {
     float: left;
-    margin-right: 0;
+    margin-right: 10px;
     margin-bottom: 10px;
   }
 
@@ -561,7 +565,8 @@
     left: 0;
   }
 
-  .modal_line_catalog {
+  .modal_line_catalog,
+  .modal_line_nakl {
     top: 20px;
   }
 

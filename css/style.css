@@ -632,6 +632,7 @@ input[type=text] {
 .middle_part {
   width: 100%;
   float: left;
+  overflow-x: scroll;
 }
 .middle_part table {
   width: 100%;
@@ -639,6 +640,7 @@ input[type=text] {
 }
 .middle_part table .table_returns th {
   padding-bottom: 25px;
+  padding-right: 100px;
 }
 .middle_part table tr {
   color: #000;
