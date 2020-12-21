@@ -151,6 +151,7 @@ input[type="text"] {
   padding: 0;
   box-sizing: border-box;
   z-index: 15;
+  overflow-y: auto;
 
   &:hover {
     width: 280px;
