@@ -510,6 +510,7 @@ input[type=text] {
   padding-bottom: 25px;
 }
 .footer_line a.footer_line_link {
+  font-family: FuturaPT-Demi;
   font-style: normal;
   font-weight: 500;
   font-size: 16px;
@@ -1106,6 +1107,7 @@ table.bordered tr td {
 }
 
 .brd_green {
+  font-family: FuturaPT-Demi;
   font-weight: 500;
   font-size: 14px;
   line-height: 16px;
