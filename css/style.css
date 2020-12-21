@@ -355,6 +355,9 @@ input[type=text] {
   position: relative;
   width: 100%;
 }
+.line_param_input label {
+  font-family: FuturaPT-Book;
+}
 
 .line_param_input_t {
   width: 49%;
