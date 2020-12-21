@@ -32,7 +32,6 @@ table {
   font-style: normal;
 }
 body {
-  font-family: "FTN45", sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
@@ -1472,6 +1471,34 @@ table.bordered tr td {
 .c_p_cart {
   display: inline-block;
   width: 44%;
+}
+
+.l_p_cart .cart_title {
+  font-family: FuturaPT-Demi;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  color: #383A41;
+}
+
+.c_p_cart span, .c_p_cart .input_edit {
+  font-family: FuturaPT-Book;
+}
+.c_p_cart span {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 12px;
+  color: #9A9A9A;
+}
+.c_p_cart .input_edit,
+.c_p_cart span.cart_text {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 16px;
+  color: #383A41;
 }
 
 .r_p_cart {
