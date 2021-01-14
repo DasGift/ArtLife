@@ -130,7 +130,7 @@
       </div>
       <div class="content">
         <div class="c_head c_head_adaptive">
-          <h1>Лицевой счет (детализация)</h1>
+          <h1>Лицевой счет склада (детализация)</h1>
         </div>
         <div class="component">
           <div class="component_head">
@@ -150,7 +150,7 @@
                   <li><a href="#">Экспорт в xls</a></li>
                 </ul>
               </div>
-              <div class="middle_part">
+              <div class="middle_part" style="overflow: auto">
                 <table class="bordered">
                   <tr class="head_t">
                     <th>
@@ -226,6 +226,9 @@
                     <td>205</td>
                     <td>Розничное вознаграждение</td>
                     <td>Розничное вознаграждение за 921012 897705</td>
+                  </tr>
+                  <tr class="head_t">
+                    <th colspan="6" class="bgs"> Итого за период&nbsp;&nbsp;&nbsp; начисление = 7952,&nbsp;&nbsp;&nbsp;списание = 9210,&nbsp;&nbsp;&nbsp;изменение = 3544</th>
                   </tr>
                 </table>
               </div>
@@ -360,13 +363,38 @@
           </div>
         </div>
       </div>
-      <div class="footer fill">
+      <div class="footer">
         <div class="footer_line">
-          <div class="title_total" style="text-align: left">
-            <span class="title_total_text">Итого за период</span>
-            <span class="title_total_text">Начисление = 7952</span>
-            <span class="title_total_text">Списание = 9210</span>
-            <span class="title_total_text">Изменение =3544</span>
+          <div class="title_line title_line_adaptive">
+            <div class="title_line_t filter">
+              Фильтры поиска
+            </div>
+          </div>
+          <div class="modal_line">
+            <a href="#" class="closebig"></a>
+            <h3>Фильтры поиска</h3>
+            <div class="component_body">
+              <div class="l_p">
+                <div class="line_param_input">
+                  <div class="label_in">
+                    <input type="text" class="tinput" required />
+                    <label class="tlabel" for>Тип операции</label>
+                  </div>
+                </div>
+              </div>
+              <div class="r_p">
+                <div class="line_param_input">
+                  <div class="label_in">
+                    <input type="text" class="tinput" required />
+                    <label class="tlabel" for>Поиск по комментариям</label>
+                  </div>
+                </div>
+                <div class="nav_links">
+                  <a class="brd_green fill w50" href="#" style="margin-top: 0">Показать</a>
+                  <a class="brd_green w50 last" href="#" style="margin-top: 0">Сбросить</a>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
