@@ -927,7 +927,8 @@ table.bordered tr td {
   right: 0;
   bottom: 35px;
 }
-.label_in .array_down {
+.label_in .array_down,
+.label_in .tinput_menu_array_down {
   display: block;
   position: absolute;
   width: 24px;
@@ -936,6 +937,9 @@ table.bordered tr td {
   right: 0;
   bottom: 35px;
   background: url(../images/array_down.png) no-repeat center;
+}
+.label_in .tinput_menu_array_down {
+  transform: rotate(180deg);
 }
 
 .tlabel {
@@ -1655,4 +1659,39 @@ table.bordered tr td {
 .table_link_block {
   float: right;
   margin-top: 15px;
+}
+
+.sklad_menu {
+  display: none;
+  position: absolute;
+  width: 100%;
+  list-style: none;
+  padding: 6px 0;
+  box-sizing: border-box;
+  border: 1px solid #e4e7ed;
+  border-radius: 4px;
+  background-color: #fff;
+  box-shadow: 0 2px 12px 0 rgba(0, 0, 0, 0.1);
+  margin: 5px 0;
+  z-index: 1;
+}
+.sklad_menu li {
+  font-size: 14px;
+  padding: 0 20px;
+  position: relative;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  color: #606266;
+  height: 34px;
+  line-height: 34px;
+  box-sizing: border-box;
+  cursor: pointer;
+}
+.sklad_menu li:hover {
+  background-color: #f5f7fa;
+}
+
+.tinput_menu_active ~ .sklad_menu {
+  display: block;
 }

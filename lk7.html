@@ -421,69 +421,50 @@
         </div>
       </div>
       <div class="footer">
-        <div class="modal_line modal_line_nakl" style="display: none">
-          <a href="#" class="closebig"></a>
-          <h3>Накладная № 2020-000255</h3>
-          <div class="component_body">
-            <div class="f_part">
-              <div class="middle_part">
-                <table class="otch_p bordered">
-                  <thead>
-                    <tr class="head_t">
-                      <th>ID</th>
-                      <th>Артикул</th>
-                      <th>Товар</th>
-                      <th>Цена</th>
-                      <th>Кол-во</th>
-                      <th>Стоимость</th>
-                      <th>Возвращено</th>
-                      <th>Баллов всего</th>
-                      <th>Кол-во вернуть</th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    <tr>
-                      <td>42451467</td>
-                      <td>42451467</td>
-                      <td>Шампунь для волос "Натурасепт" сила трех масел, 250 мл</td>
-                      <td>1076.40</td>
-                      <td>34</td>
-                      <td>1076.40</td>
-                      <td>1076.40</td>
-                      <td>10.3</td>
-                      <td>
-                        <span>Количество</span>
-                        <input value="23 |" class="input_edit"/>
-                      </td>
-                    </tr>
-                    <tr>
-                      <td>42451467</td>
-                      <td>42451467</td>
-                      <td>Шампунь для волос "Натурасепт" сила трех масел, 250 мл</td>
-                      <td>1076.40</td>
-                      <td>34</td>
-                      <td>1076.40</td>
-                      <td>1076.40</td>
-                      <td>10.3</td>
-                      <td>
-                        <span>Количество</span>
-                        <input value="23 |" class="input_edit"/>
-                      </td>
-                    </tr>
-                  </tbody>
-                </table>
-              </div>
+        <div class="footer_line">
+          <div class="title_line title_line_adaptive">
+            <div class="title_line_t filter">
+              Фильтры поиска
             </div>
           </div>
-          <div class="component_body">
-            <div class="line_param_input">
-              <div class="label_in">
-                <input type="text" class="tinput" />
-                <label class="tlabel" style="top: 18px">Оставить комментарий</label>
+          <div class="modal_line">
+            <a href="#" class="closebig"></a>
+            <h3>Фильтры поиска</h3>
+            <div class="component_body">
+              <div class="l_p">
+                <div class="line_param_input">
+                  <div class="label_in">
+                    <!--                    <input type="text" class="tinput" />-->
+                    <input type="text" class="tinput tinput_menu" />
+                    <label class="tlabel" for>Склад обслуживания</label>
+                    <span class="array_down"></span>
+                    <ul class="sklad_menu">
+                      <li>Свой</li>
+                      <li>Чужой</li>
+                      <li>Все</li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="line_param_input">
+                  <div class="label_in">
+                    <input type="text" class="tinput" />
+                    <label class="tlabel" for>Документы</label>
+                    <span class="array_down"></span>
+                  </div>
+                </div>
               </div>
-            </div>
-            <div class="nav_links">
-              <a class="brd_green fill button_adaptive" href="#" style="float: right; margin-right: 0">Вернуть</a>
+              <div class="r_p">
+                <div class="line_param_input">
+                  <div class="label_in">
+                    <input type="text" class="tinput" required />
+                    <label class="tlabel" for>ID / ФИО покупателя</label>
+                  </div>
+                </div>
+                <div class="nav_links">
+                  <a class="brd_green fill w50" href="#">Показать</a>
+                  <a class="brd_green w50 last" href="#">Сбросить</a>
+                </div>
+              </div>
             </div>
           </div>
         </div>
