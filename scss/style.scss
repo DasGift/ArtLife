@@ -481,7 +481,8 @@ input[type="text"] {
   width: 100%;
   margin-bottom: 24px;
 
-  &_top {
+  &_top,
+  &_top_edit {
     font-family: FuturaPT-Book;
     font-style: normal;
     font-weight: normal;
@@ -1847,4 +1848,32 @@ table.bordered tr td {
 
 .tinput_menu_active ~ .sklad_menu {
   display: block;
+}
+
+.block_edit {
+  display: none;
+  position: relative;
+}
+
+.input_edit_icon {
+  display: none;
+  position: absolute;
+  right: 20px;
+  top: 24px;
+}
+
+.array_top_edit {
+  position: absolute;
+  top: 20px;
+  right: 0;
+}
+
+.array_bottom_edit {
+  position: absolute;
+  bottom: 7px;
+  right: 0;
+}
+
+.edit_column {
+  position: relative;
 }

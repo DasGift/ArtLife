@@ -143,18 +143,15 @@ $(document).ready(function(){
         $(this).addClass('active');
         $('.comment_block').css({'display': 'block'});
         $('.footer').css({'display': 'block'});
+        $('.not_edit').css({'display': 'none'});
+        $('.block_edit').css({'display': 'inline-block'});
+        $('.input_edit_icon').css({'display': 'block'});
     });
 
     $('.tinput_menu').click(function(){
         $(this).toggleClass('tinput_menu_active')
         $('.array_down').toggleClass('tinput_menu_array_down');
     });
-
-    // $('body').click(function(){
-    //     $('.tinput_menu').removeClass('tinput_menu_active')
-    //     // $('.sklad_menu').css({'display': 'block'});
-    //     $('.tinput_menu_array_down').css({'transform': 'rotate(180deg)'});
-    // });
 });
 
 function FixTable(table) {
