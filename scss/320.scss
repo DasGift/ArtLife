@@ -40,6 +40,11 @@
     top: 5px !important;
   }
 
+  .tinput:focus ~ label.t_label_adaptive {
+    font-size: 9px;
+    top: auto !important;
+  }
+
   .label_in .array_down,
   .label_in .search {
     bottom: 17px;
@@ -684,6 +689,10 @@
 
   .tlabel_adaptive {
     top: 24px !important;
+  }
+
+  .t_label_adaptive {
+    top: auto !important;
   }
 
   .block_nopadding {
