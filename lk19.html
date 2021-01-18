@@ -129,26 +129,30 @@
       </div>
       <div class="content">
         <div class="c_head">
-          <h1>Складские обороты (операции по складу)</h1>
+          <h1>Движение денежных средств по складу</h1>
         </div>
         <div class="component">
           <div class="component_head">
             <div class="component_head_sort" style="width: 100%">
-              <div class="line_param_input line_param_input_t">
-                <div class="label_in">
-                  <input type="text" class="tinput" />
-                  <label class="tlabel">Поиск по артиклу или наименованию</label>
-                  <span class="search"></span>
-                </div>
-              </div>
               <div class="line_param_input line_param_input_t">
                 <label style="font-size: 12px; color: #9A9A9A;">Период от и до</label>
                 <input type="text" placeholder="01.04.2020 - 09.09.2020"/>
                 <span class="calendar"></span>
               </div>
             </div>
-            <div class="component_tags component_tags_adaptive" style="margin-top: 15px">
-              <div class="tags">Гель-бад<span class="closes"></span></div>
+            <div class="line_param_input line_param_input_t">
+              <div class="check_block">
+                <input type="checkbox" class="line_param_checkbox" id="period" checked/>
+                <label class="line_param_label" for="period">Наличка</label>
+              </div>
+              <div class="check_block">
+                <input type="checkbox" class="line_param_checkbox" id="cashless" checked/>
+                <label class="line_param_label" for="cashless">Безнал</label>
+              </div>
+              <div class="check_block">
+                <input type="checkbox" class="line_param_checkbox" id="personal"/>
+                <label class="line_param_label" for="personal">Лицевой</label>
+              </div>
             </div>
           </div>
           <div class="component_body">
@@ -164,201 +168,82 @@
                   <table class="otch_p bordered">
                     <thead>
                       <tr class="head_t">
-                      <th style="padding-right: 25px">
-                        <div>
-                          <span>Артикул</span>
-                        </div>
-                        <div class="table_array">
-                          <img src="./images/array-drop-top.svg" alt="Сортировка" class="table_array_top">
-                          <img src="./images/array-drop-down.svg" alt="Сортировка" class="table_array_bottom">
-                        </div>
-                      </th>
-                      <th style="padding-right: 25px">
-                        <div>
-                          <span>Группа товаров</span>
-                        </div>
-                        <div class="table_array">
-                          <img src="./images/array-drop-top.svg" alt="Сортировка" class="table_array_top">
-                          <img src="./images/array-drop-down.svg" alt="Сортировка" class="table_array_bottom">
-                        </div>
-                      </th>
-                      <th style="padding-right: 25px">
-                        <div>
-                          <span>Наименование</span>
-                        </div>
-                        <div class="table_array">
-                          <img src="./images/array-drop-top.svg" alt="Сортировка" class="table_array_top">
-                          <img src="./images/array-drop-down.svg" alt="Сортировка" class="table_array_bottom">
-                        </div>
-                      </th>
-                      <th style="padding-right: 25px">
-                        <div>
-                          <span>Остаток на начало периода</span>
-                        </div>
-                        <div class="table_array">
-                          <img src="./images/array-drop-top.svg" alt="Сортировка" class="table_array_top">
-                          <img src="./images/array-drop-down.svg" alt="Сортировка" class="table_array_bottom">
-                        </div>
-                      </th>
-                      <th style="padding-right: 25px">
-                        <div>
-                          <span>Продано дистрибьюторам</span>
-                        </div>
-                        <div class="table_array">
-                          <img src="./images/array-drop-top.svg" alt="Сортировка" class="table_array_top">
-                          <img src="./images/array-drop-down.svg" alt="Сортировка" class="table_array_bottom">
-                        </div>
-                      </th>
-                      <th style="padding-right: 25px">
-                        <div>
-                          <span>Возвраты от дистрибьюторов</span>
-                        </div>
-                        <div class="table_array">
-                          <img src="./images/array-drop-top.svg" alt="Сортировка" class="table_array_top">
-                          <img src="./images/array-drop-down.svg" alt="Сортировка" class="table_array_bottom">
-                        </div>
-                      </th>
-                      <th style="padding-right: 25px">
-                        <div>
-                          <span>Отгружено нижестоящим</span>
-                        </div>
-                        <div class="table_array">
-                          <img src="./images/array-drop-top.svg" alt="Сортировка" class="table_array_top">
-                          <img src="./images/array-drop-down.svg" alt="Сортировка" class="table_array_bottom">
-                        </div>
-                      </th>
-                      <th style="padding-right: 25px">
-                        <div>
-                          <span>Оприходованно от вышестоящих</span>
-                        </div>
-                        <div class="table_array">
-                          <img src="./images/array-drop-top.svg" alt="Сортировка" class="table_array_top">
-                          <img src="./images/array-drop-down.svg" alt="Сортировка" class="table_array_bottom">
-                        </div>
-                      </th>
-                      <th style="padding-right: 25px">
-                        <div>
-                          <span>Пополнение</span>
-                        </div>
-                        <div class="table_array">
-                          <img src="./images/array-drop-top.svg" alt="Сортировка" class="table_array_top">
-                          <img src="./images/array-drop-down.svg" alt="Сортировка" class="table_array_bottom">
-                        </div>
-                      </th>
-                      <th style="padding-right: 25px">
-                        <div>
+                        <th style="padding-right: 25px">
+                          <span>Дата операции</span>
+                        </th>
+                        <th style="padding-right: 25px">
+                          <span>Начисление</span>
+                        </th>
+                        <th style="padding-right: 25px">
                           <span>Списание</span>
-                        </div>
-                        <div class="table_array">
-                          <img src="./images/array-drop-top.svg" alt="Сортировка" class="table_array_top">
-                          <img src="./images/array-drop-down.svg" alt="Сортировка" class="table_array_bottom">
-                        </div>
-                      </th>
-                      <th style="padding-right: 25px">
-                        <div>
-                          <span>Обороты</span>
-                        </div>
-                        <div class="table_array">
-                          <img src="./images/array-drop-top.svg" alt="Сортировка" class="table_array_top">
-                          <img src="./images/array-drop-down.svg" alt="Сортировка" class="table_array_bottom">
-                        </div>
-                      </th>
-                      <th style="padding-right: 25px">
-                        <div>
-                          <span>Остаток на конец периода (расчётный)</span>
-                        </div>
-                        <div class="table_array">
-                          <img src="./images/array-drop-top.svg" alt="Сортировка" class="table_array_top">
-                          <img src="./images/array-drop-down.svg" alt="Сортировка" class="table_array_bottom">
-                        </div>
-                      </th>
-                      <th style="padding-right: 25px">
-                        <div>
-                          <span>Остаток на конец периода (факт)</span>
-                        </div>
-                        <div class="table_array">
-                          <img src="./images/array-drop-top.svg" alt="Сортировка" class="table_array_top">
-                          <img src="./images/array-drop-down.svg" alt="Сортировка" class="table_array_bottom">
-                        </div>
-                      </th>
-                    </tr>
+                        </th>
+                        <th style="padding-right: 25px">
+                          <span>Тип ДС</span>
+                        </th>
+                        <th style="padding-right: 25px">
+                          <span>Комментарий</span>
+                        </th>
+                        <th style="padding-right: 25px">
+                          <span>Итогово на лицевом счете</span>
+                        </th>
+                        <th style="padding-right: 25px">
+                          <span>Контрагент (№)</span>
+                        </th>
+                        <th style="padding-right: 25px">
+                          <span>Пользователь/Оператор</span>
+                        </th>
+                      </tr>
                     </thead>
                     <tbody>
                       <tr>
-                      <td>6000</td>
-                      <td>VIP-продукция</td>
-                      <td>
-                        <div>
-                          <a href="#" class="lt3" style="text-decoration: underline">Бальзам для волос "Натурасепт" сила трех масел, 250 мл</a>
-                        </div>
-                      </td>
-                      <td>0</td>
-                      <td>234</td>
-                      <td>133</td>
-                      <td>133</td>
-                      <td>45</td>
-                      <td>433</td>
-                      <td>12</td>
-                      <td>12</td>
-                      <td>12</td>
-                      <td>12</td>
-                    </tr>
-                      <tr>
-                        <td>6000</td>
-                        <td>VIP-продукция</td>
-                        <td>
-                          <div>
-                            <a href="#" class="lt3" style="text-decoration: underline">Бальзам для волос "Натурасепт" сила трех масел, 250 мл</a>
-                          </div>
-                        </td>
+                        <td>01.03.2020</td>
+                        <td>2345678</td>
                         <td>0</td>
-                        <td>234</td>
-                        <td>133</td>
-                        <td>133</td>
-                        <td>45</td>
-                        <td>433</td>
-                        <td>12</td>
-                        <td>12</td>
-                        <td>12</td>
-                        <td>12</td>
+                        <td>Лицевой счет</td>
+                        <td>Pозничная продажа партнёру 123131 на складе 123123 по накладной 1</td>
+                        <td>1785578</td>
+                        <td>345255</td>
+                        <td>Зам управляющего Григорьев А.В</td>
                       </tr>
                       <tr>
-                        <td>6000</td>
-                        <td>VIP-продукция</td>
-                        <td>
-                          <div>
-                            <a href="#" class="lt3" style="text-decoration: underline">Бальзам для волос "Натурасепт" сила трех масел, 250 мл</a>
-                          </div>
-                        </td>
+                        <td>01.03.2020</td>
+                        <td>2345678</td>
                         <td>0</td>
-                        <td>234</td>
-                        <td>133</td>
-                        <td>133</td>
-                        <td>45</td>
-                        <td>433</td>
-                        <td>12</td>
-                        <td>12</td>
-                        <td>12</td>
-                        <td>12</td>
+                        <td>Лицевой счет</td>
+                        <td>Pозничная продажа партнёру 123131 на складе 123123 по накладной 1</td>
+                        <td>1785578</td>
+                        <td>345255</td>
+                        <td>Зам управляющего Григорьев А.В</td>
                       </tr>
                       <tr>
-                        <td>6000</td>
-                        <td>VIP-продукция</td>
-                        <td>
-                          <div>
-                            <a href="#" class="lt3" style="text-decoration: underline">Бальзам для волос "Натурасепт" сила трех масел, 250 мл</a>
-                          </div>
-                        </td>
+                        <td>01.03.2020</td>
+                        <td>2345678</td>
                         <td>0</td>
-                        <td>234</td>
-                        <td>133</td>
-                        <td>133</td>
-                        <td>45</td>
-                        <td>433</td>
-                        <td>12</td>
-                        <td>12</td>
-                        <td>12</td>
-                        <td>12</td>
+                        <td>Лицевой счет</td>
+                        <td>Pозничная продажа партнёру 123131 на складе 123123 по накладной 1</td>
+                        <td>1785578</td>
+                        <td>345255</td>
+                        <td>Зам управляющего Григорьев А.В</td>
+                      </tr>
+                      <tr>
+                        <td>01.03.2020</td>
+                        <td>2345678</td>
+                        <td>0</td>
+                        <td>Лицевой счет</td>
+                        <td>Pозничная продажа партнёру 123131 на складе 123123 по накладной 1</td>
+                        <td>1785578</td>
+                        <td>345255</td>
+                        <td>Зам управляющего Григорьев А.В</td>
+                      </tr>
+                      <tr>
+                        <td>01.03.2020</td>
+                        <td>2345678</td>
+                        <td>0</td>
+                        <td>Лицевой счет</td>
+                        <td>Pозничная продажа партнёру 123131 на складе 123123 по накладной 1</td>
+                        <td>1785578</td>
+                        <td>345255</td>
+                        <td>Зам управляющего Григорьев А.В</td>
                       </tr>
                     </tbody>
                   </table>

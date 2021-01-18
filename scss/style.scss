@@ -786,7 +786,7 @@ input[type="text"] {
 
   table tr td {
     padding: 8px;
-    font-family: FuturaPT-Demi;
+    font-family: FuturaPT-Book;
     font-style: normal;
     font-weight: 500;
     font-size: 14px;
@@ -811,6 +811,16 @@ input[type="text"] {
 table.bordered tr th,
 table.bordered tr td {
   border-right: 1px solid #BABABA;
+}
+
+.middle_part table tr td.table_status_active {
+  font-family: FuturaPT-Demi;
+}
+
+.middle_part table tr td.table_status_notactive {
+  font-family: FuturaPT-Demi;
+  text-transform: uppercase;
+  color: #ED1A2E;
 }
 
 .tooltip_block {
@@ -1853,6 +1863,12 @@ table.bordered tr td {
 .block_edit {
   display: none;
   position: relative;
+}
+
+.block_edit_add {
+  position: relative;
+  display: inline-block;
+  width: 80%;
 }
 
 .input_edit_icon {
