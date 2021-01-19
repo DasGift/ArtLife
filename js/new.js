@@ -94,6 +94,10 @@ $(document).ready(function(){
         $('.modal_send').css({'display': 'block'});
     });
 
+    $('.add_points').click(function(){
+        $('.modal_add_points').css({'display': 'block'});
+    });
+
     $('.modal_line .closebig').click(function(){
         $('.modal_line').css({'display': 'none'});
         $('.footer_line').css({'display': 'block'});
