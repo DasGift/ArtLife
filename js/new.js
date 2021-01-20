@@ -98,6 +98,10 @@ $(document).ready(function(){
         $('.modal_add_points').css({'display': 'block'});
     });
 
+    $('.add_user').click(function(){
+        $('.modal_add_user').css({'display': 'block'});
+    });
+
     $('.modal_line .closebig').click(function(){
         $('.modal_line').css({'display': 'none'});
         $('.footer_line').css({'display': 'block'});
@@ -119,6 +123,8 @@ $(document).ready(function(){
         $('.modal_view').css({'display': 'none'});
         $('.modal_sale').css({'display': 'none'});
         $('.modal_sklad').css({'display': 'none'});
+        $('.modal_add_points').css({'display': 'none'});
+        $('.modal_add_user').css({'display': 'none'});
         $('.overlay').css({'display': 'none'})
         $('body').removeClass('noscroll')
     });
