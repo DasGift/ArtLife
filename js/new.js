@@ -69,7 +69,7 @@ $(document).ready(function(){
     });
 
     $('.create_account').click(function(){
-        $('.modal_line').css({'display': 'block'});
+        $('.modal_nakl').css({'display': 'block'});
     });
 
     $('.open_view').click(function(){

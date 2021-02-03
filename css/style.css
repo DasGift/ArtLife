@@ -1274,7 +1274,8 @@ table.bordered tr td {
 .modal_sale,
 .modal_sklad,
 .modal_add_points,
-.modal_add_user {
+.modal_add_user,
+.modal_nakl {
   display: none;
   position: fixed;
   width: 93%;
@@ -1293,7 +1294,8 @@ table.bordered tr td {
 .modal_sale .line_param_down,
 .modal_sklad .line_param_down,
 .modal_add_points .line_param_down,
-.modal_add_user .line_param_down {
+.modal_add_user .line_param_down,
+.modal_nakl .line_param_down {
   position: absolute;
   width: 24px;
   height: 24px;
